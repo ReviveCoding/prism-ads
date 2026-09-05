@@ -27,6 +27,8 @@ does not redistribute row-level Criteo data, Parquet/DuckDB data, credentials, o
 - Initial root CodeQL: PASS. Initial CPU CI exposed two local-only integrity checks that require
   intentionally unpublished data/state; the public workflow excludes only those checks while
   retaining the complete local gate.
+- Public verification commit: `adf8f415b8da652640fbc47809b7f29e37685c34`.
+- Remote verification on that commit: CPU CI PASS, CodeQL PASS, and Pages deployment PASS.
 - Security: vulnerability alerts, Dependabot security updates, private vulnerability reporting,
   secret scanning, and secret-scanning push protection enabled; initial alert queries returned zero.
 

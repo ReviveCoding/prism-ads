@@ -180,6 +180,7 @@ def test_required_hardening_documents_are_present_and_nonempty() -> None:
 def test_publication_metadata_is_scoped_and_automated() -> None:
     citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
     security = (ROOT / "SECURITY.md").read_text(encoding="utf-8")
+    github_security = (ROOT / ".github" / "SECURITY.md").read_text(encoding="utf-8")
     provenance = (ROOT / "PUBLICATION_PROVENANCE.md").read_text(encoding="utf-8")
     dependabot = (ROOT / ".github" / "dependabot.yml").read_text(encoding="utf-8")
     codeql = (ROOT / ".github" / "workflows" / "codeql.yml").read_text(encoding="utf-8")
@@ -189,6 +190,7 @@ def test_publication_metadata_is_scoped_and_automated() -> None:
     assert "2026-09-04" in citation and "doi" not in citation.lower()
     assert "private vulnerability reporting" in security
     assert "Do not disclose sensitive security details in a public issue" in security
+    assert "responsible-disclosure policy" in github_security
     assert "prism-ads-v2.2-20260904-8d98593fabdf-r2" in provenance
     assert "unborn" in provenance and "parentless root commit" in provenance
     assert 'package-ecosystem: "pip"' in dependabot and 'interval: "weekly"' in dependabot
