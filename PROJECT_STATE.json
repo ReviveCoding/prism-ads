@@ -1,0 +1,25 @@
+{
+  "spec_version": "2.2",
+  "state_version": 36,
+  "current_phase": "P17",
+  "last_completed_phase": "P17",
+  "status": "complete",
+  "scientific_status": "FROZEN",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "locked_run_id": "locked-r2-20260904-001",
+  "locked_started": true,
+  "locked_completed": true,
+  "datasets": {
+    "T1": "validated_roles_protected",
+    "T2": "validated_roles_protected",
+    "T3": "generated_truth_sealed"
+  },
+  "environment": {
+    "status": "qualified",
+    "python": "3.12.10",
+    "python_https": "PASS"
+  },
+  "mandatory_blockers": [],
+  "optional_skips": [],
+  "updated_at": "2026-09-04T23:45:00.000Z"
+}

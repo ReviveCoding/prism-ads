@@ -1,0 +1,24 @@
+{
+  "phase": "P13",
+  "status": "COMPLETED_NON_PROMOTABLE",
+  "completed_at": "2026-09-04T22:28:00.000Z",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "locked_run_id": "locked-r2-20260904-001",
+  "outputs": [
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/primary_predictions_pretruth.parquet",
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/primary_results.json",
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/promotion_gate.json"
+  ],
+  "gates": {
+    "freeze_integrity_before": "23 of 23 PASS",
+    "freeze_integrity_after": "23 of 23 PASS",
+    "ten_privacy_replicates": "PASS",
+    "thirty_bayesian_fits": "PASS",
+    "predictions_frozen_before_truth": "PASS",
+    "inference_health": "PASS",
+    "paired_uncertainty": "PASS",
+    "five_percent_materiality": "PASS",
+    "interval_coverage_guardrail": "FAIL"
+  },
+  "next_phase": "P14"
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "P11",
+  "status": "PASS",
+  "protected_user_population": 6142256,
+  "delta_population_check": "1e-7 < 1 / 6142256",
+  "primary_epsilon": 1.0,
+  "epsilon_selection_rule": "largest permitted primary epsilon under the prespecified moderate-privacy policy ceiling, conditional on complete bounded-cell release feasibility",
+  "threshold_stress": {
+    "label": "ADH-inspired local aggregation-threshold stress test",
+    "candidate_groups": 3475,
+    "candidate_units": 443161,
+    "k10": {"released_groups": 2690, "released_units": 439731},
+    "k20": {"released_groups": 2209, "released_units": 432861},
+    "k50": {"released_groups": 1470, "released_units": 409474},
+    "k100": {"released_groups": 925, "released_units": 369923}
+  },
+  "qualification_normalized_decision_regret": {
+    "top10": {"B3": 0.01737819659818199, "PRISM": 0.019296887716900295},
+    "top25": {"B3": 0.009526904943308035, "PRISM": 0.014450721326729933}
+  },
+  "primary_release_threshold": "none; thresholding is a distinct Study B stress track",
+  "long_tail_definition": "campaign size quintiles fixed from outcome-free unit counts; bottom quintile is the primary long-tail guardrail"
+}

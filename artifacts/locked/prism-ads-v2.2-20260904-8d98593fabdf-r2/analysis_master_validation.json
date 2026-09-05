@@ -1,0 +1,15 @@
+{
+  "bytes": 13016443,
+  "created_at": "2026-09-04T23:23:49.360615Z",
+  "expected_rows": 399040,
+  "null_truth": 0,
+  "path": "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/analysis_master.parquet",
+  "phase": "P15",
+  "rows": 399040,
+  "sha256": "70a4b6ae5c15e4b468c2fe39e4aba446918ef373f5d1dff414b28ff80062897b",
+  "source_identities": {
+    "primary": "1b8579b4766da3a093a691c6359fe135c70c9c1424968a4f7cc750a92ee3cc7b",
+    "secondary": "04879cf5f31a751fae78e8002918207f1a072055219205c7eadd834ed7001aaa"
+  },
+  "status": "PASS"
+}

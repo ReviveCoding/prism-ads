@@ -1,0 +1,1207 @@
+{
+  "claim_boundary": "Research benchmark evidence only; T2 attribution credit is not causal incrementality and no production or Ads Data Hub implementation is claimed.",
+  "created_at": "2026-09-04T23:27:13.570039Z",
+  "decision_reason": "PRISM passed weighted-RMSE materiality and paired uncertainty but failed the frozen interval-coverage guardrail; all promotion gates are conjunctive.",
+  "final_scientific_decision": "RETAIN_BASELINE",
+  "ordered_analysis": [
+    {
+      "order": 1,
+      "result": {
+        "analysis_master_sha256": "70a4b6ae5c15e4b468c2fe39e4aba446918ef373f5d1dff414b28ff80062897b",
+        "controller": {
+          "errors": [],
+          "ledger_records": 36,
+          "registered_artifacts_checked": 85,
+          "status": "PASS"
+        },
+        "freeze": {
+          "artifacts_checked": 23,
+          "errors": [],
+          "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+          "status": "PASS"
+        }
+      },
+      "topic": "artifact_integrity"
+    },
+    {
+      "order": 2,
+      "result": {
+        "T1_assignment_recomputation": "PASS",
+        "T1_data_quality": "PASS",
+        "T1_randomization_validity": "PASS",
+        "T2_conversion_path_consistency": "PASS",
+        "T2_data_quality": "PASS",
+        "T2_path_role_leakage": "PASS",
+        "T2_user_role_leakage": "PASS",
+        "mypy": "PASS",
+        "row_count_lineage": "PASS",
+        "ruff": "PASS",
+        "tests": "11 passed"
+      },
+      "topic": "data_validity"
+    },
+    {
+      "order": 3,
+      "result": {
+        "P04": {
+          "T1_assignment_recomputation": "PASS",
+          "T1_data_quality": "PASS",
+          "T1_randomization_validity": "PASS",
+          "T2_conversion_path_consistency": "PASS",
+          "T2_data_quality": "PASS",
+          "T2_path_role_leakage": "PASS",
+          "T2_user_role_leakage": "PASS",
+          "mypy": "PASS",
+          "row_count_lineage": "PASS",
+          "ruff": "PASS",
+          "tests": "11 passed"
+        },
+        "T1": {
+          "NR0": {
+            "lower_95": -0.00162271632514619,
+            "standard_error": 0.001201943146014141,
+            "upper_95": 0.003088814230158777,
+            "value": 0.0007330489525062935
+          },
+          "NR1": {
+            "lower_95": -0.00019397517582387335,
+            "standard_error": 0.0009482575795553516,
+            "upper_95": 0.0035231262321673553,
+            "value": 0.0016645755281717409
+          },
+          "NR2": {
+            "lower_95": -0.0005261113022511155,
+            "standard_error": 0.0010941643110861,
+            "upper_95": 0.0037629339835445553,
+            "value": 0.00161841134064672
+          },
+          "rows": 14057
+        }
+      },
+      "topic": "randomization_diagnostics"
+    },
+    {
+      "order": 4,
+      "result": {
+        "accountant": "google-dp-accounting PLD",
+        "accountant_version": "0.6.0",
+        "accounted_epsilon": 0.9999999999998815,
+        "compositions": 1,
+        "declared_epsilon": 1.0,
+        "delta": 1e-07,
+        "l2_sensitivity": 2.449489742783178,
+        "neighboring_relation": "user-level add/remove-one",
+        "noise_standard_deviation": 11.46033717766397,
+        "pessimistic_estimate": true,
+        "phase": "P11",
+        "status": "PASS"
+      },
+      "topic": "privacy_accounting_validity"
+    },
+    {
+      "order": 5,
+      "result": {
+        "replicates": [
+          {
+            "fits": [
+              {
+                "final_loss": 2530.0399151444435,
+                "finite_loss": true,
+                "initial_loss": 139054.90796941146,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 134.12020479998318,
+                "seed": 2026091400
+              },
+              {
+                "final_loss": 2538.8581962883472,
+                "finite_loss": true,
+                "initial_loss": 157784.89018137753,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 137.45135719998507,
+                "seed": 2026091401
+              },
+              {
+                "final_loss": 2543.0994433760643,
+                "finite_loss": true,
+                "initial_loss": 180250.57843821496,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 126.3641352999839,
+                "seed": 2026091402
+              }
+            ],
+            "privacy_seed": 2026091300,
+            "replicate": 0,
+            "seed_stability_rmse": 0.001984268892556429
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2743.756804615259,
+                "finite_loss": true,
+                "initial_loss": 156743.1855436191,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 118.91551040002378,
+                "seed": 2026091410
+              },
+              {
+                "final_loss": 2745.51786249876,
+                "finite_loss": true,
+                "initial_loss": 157113.2621209398,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 116.77770670002792,
+                "seed": 2026091411
+              },
+              {
+                "final_loss": 2741.1200645565987,
+                "finite_loss": true,
+                "initial_loss": 155839.4458736442,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 101.68874849996064,
+                "seed": 2026091412
+              }
+            ],
+            "privacy_seed": 2026091301,
+            "replicate": 1,
+            "seed_stability_rmse": 0.0009952483233064413
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2612.045368552208,
+                "finite_loss": true,
+                "initial_loss": 144256.8021114692,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 97.09838219999801,
+                "seed": 2026091420
+              },
+              {
+                "final_loss": 2612.4364672601223,
+                "finite_loss": true,
+                "initial_loss": 165131.70571390167,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 113.71727620001184,
+                "seed": 2026091421
+              },
+              {
+                "final_loss": 2613.3003965616226,
+                "finite_loss": true,
+                "initial_loss": 146769.1296963282,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 102.05068899999605,
+                "seed": 2026091422
+              }
+            ],
+            "privacy_seed": 2026091302,
+            "replicate": 2,
+            "seed_stability_rmse": 0.0023674173280596733
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2770.6244737803936,
+                "finite_loss": true,
+                "initial_loss": 173484.36947310902,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 103.80610849999357,
+                "seed": 2026091430
+              },
+              {
+                "final_loss": 2788.516712486744,
+                "finite_loss": true,
+                "initial_loss": 163125.5524681909,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 104.26590359996771,
+                "seed": 2026091431
+              },
+              {
+                "final_loss": 2774.144252717495,
+                "finite_loss": true,
+                "initial_loss": 153373.8663618639,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 99.1376023000339,
+                "seed": 2026091432
+              }
+            ],
+            "privacy_seed": 2026091303,
+            "replicate": 3,
+            "seed_stability_rmse": 0.0028392986860126257
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2572.6159603893757,
+                "finite_loss": true,
+                "initial_loss": 165612.91050640866,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 102.88870609999867,
+                "seed": 2026091440
+              },
+              {
+                "final_loss": 2553.402731001377,
+                "finite_loss": true,
+                "initial_loss": 158648.00953222252,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 103.6346298000426,
+                "seed": 2026091441
+              },
+              {
+                "final_loss": 2558.626971900463,
+                "finite_loss": true,
+                "initial_loss": 142479.7979123555,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 99.61457049997989,
+                "seed": 2026091442
+              }
+            ],
+            "privacy_seed": 2026091304,
+            "replicate": 4,
+            "seed_stability_rmse": 0.001400769455358386
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2772.5524311065674,
+                "finite_loss": true,
+                "initial_loss": 161891.14132172242,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 104.44995500001824,
+                "seed": 2026091450
+              },
+              {
+                "final_loss": 2752.780474305153,
+                "finite_loss": true,
+                "initial_loss": 153396.4017329812,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 103.36214470001869,
+                "seed": 2026091451
+              },
+              {
+                "final_loss": 2744.4522845745087,
+                "finite_loss": true,
+                "initial_loss": 183269.88847052818,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 96.35243069997523,
+                "seed": 2026091452
+              }
+            ],
+            "privacy_seed": 2026091305,
+            "replicate": 5,
+            "seed_stability_rmse": 0.004936975426971912
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2565.007422029972,
+                "finite_loss": true,
+                "initial_loss": 164616.7818217259,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 100.30512999999337,
+                "seed": 2026091460
+              },
+              {
+                "final_loss": 2550.9531823694706,
+                "finite_loss": true,
+                "initial_loss": 175242.02627334278,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 107.52990369999316,
+                "seed": 2026091461
+              },
+              {
+                "final_loss": 2551.0315052866936,
+                "finite_loss": true,
+                "initial_loss": 152607.06785417255,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 93.10825140000088,
+                "seed": 2026091462
+              }
+            ],
+            "privacy_seed": 2026091306,
+            "replicate": 6,
+            "seed_stability_rmse": 0.002364041283726692
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2852.156215965748,
+                "finite_loss": true,
+                "initial_loss": 145623.33633413538,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 100.73285309999483,
+                "seed": 2026091470
+              },
+              {
+                "final_loss": 2850.0256431102753,
+                "finite_loss": true,
+                "initial_loss": 175092.52791608096,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 103.5065375000122,
+                "seed": 2026091471
+              },
+              {
+                "final_loss": 2855.9221668839455,
+                "finite_loss": true,
+                "initial_loss": 171002.01624725014,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 97.77882010000758,
+                "seed": 2026091472
+              }
+            ],
+            "privacy_seed": 2026091307,
+            "replicate": 7,
+            "seed_stability_rmse": 0.0011962685966864228
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2661.405637562275,
+                "finite_loss": true,
+                "initial_loss": 164884.7131022606,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 101.5638552000164,
+                "seed": 2026091480
+              },
+              {
+                "final_loss": 2662.138736605644,
+                "finite_loss": true,
+                "initial_loss": 175055.40036565997,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 103.52844339999137,
+                "seed": 2026091481
+              },
+              {
+                "final_loss": 2675.5903909802437,
+                "finite_loss": true,
+                "initial_loss": 127600.80390572175,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 103.36855389998527,
+                "seed": 2026091482
+              }
+            ],
+            "privacy_seed": 2026091308,
+            "replicate": 8,
+            "seed_stability_rmse": 0.0010276329703629017
+          },
+          {
+            "fits": [
+              {
+                "final_loss": 2800.772544324398,
+                "finite_loss": true,
+                "initial_loss": 165740.21689056605,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 99.96584989997791,
+                "seed": 2026091490
+              },
+              {
+                "final_loss": 2808.027241766453,
+                "finite_loss": true,
+                "initial_loss": 164706.55352126993,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 102.52779510000255,
+                "seed": 2026091491
+              },
+              {
+                "final_loss": 2816.1578005850315,
+                "finite_loss": true,
+                "initial_loss": 183697.0431706328,
+                "peak_vram_allocated_bytes": 64389632,
+                "peak_vram_reserved_bytes": 73400320,
+                "runtime_seconds": 95.89439610001864,
+                "seed": 2026091492
+              }
+            ],
+            "privacy_seed": 2026091309,
+            "replicate": 9,
+            "seed_stability_rmse": 0.0034644315019249916
+          }
+        ],
+        "status": "PASS"
+      },
+      "topic": "inference_health"
+    },
+    {
+      "order": 6,
+      "result": {
+        "B3_weighted_rmse": 0.00469783150493247,
+        "PRISM_weighted_rmse": 0.00432812168438213,
+        "absolute_difference": 0.00036970982055034053,
+        "paired_uncertainty": {
+          "lower_95": 0.00012268699818416306,
+          "mean_difference": 0.0003767129851541893,
+          "median_difference": 0.0003771131600723575,
+          "method": "1000 campaign-cluster bootstraps nesting 10 privacy replicates",
+          "upper_95": 0.0006633065718951088
+        },
+        "relative_improvement": 0.07869797376984787
+      },
+      "topic": "primary_weighted_rmse"
+    },
+    {
+      "order": 7,
+      "result": {
+        "B3": 0.00528524026769923,
+        "PRISM": 0.004977769302075181
+      },
+      "topic": "macro_rmse"
+    },
+    {
+      "order": 8,
+      "result": {
+        "B3": {
+          "macro_rmse": 0.005420059852691644,
+          "weighted_rmse": 0.005358563063884826
+        },
+        "PRISM": {
+          "macro_rmse": 0.004960394067684589,
+          "weighted_rmse": 0.004783212383720531
+        }
+      },
+      "topic": "long_tail_result"
+    },
+    {
+      "order": 9,
+      "result": {
+        "B3": 0.0018895348837209302,
+        "PRISM": 0.7063662790697675
+      },
+      "topic": "interval_coverage"
+    },
+    {
+      "order": 10,
+      "result": {
+        "top10": {
+          "B3": 0.018855503974087865,
+          "PRISM": 0.007059995483916823
+        },
+        "top25": {
+          "B3": 0.010547799433017074,
+          "PRISM": 0.006472261896010921
+        }
+      },
+      "topic": "decision_regret"
+    },
+    {
+      "order": 11,
+      "result": {
+        "scores": {
+          "R0@0.25": {
+            "B3": {
+              "macro_rmse": 0.00013326910724875037,
+              "weighted_rmse": 0.00013326897395925932
+            },
+            "PRISM": {
+              "macro_rmse": 0.0009386291565723184,
+              "weighted_rmse": 0.0009283521028404366
+            }
+          },
+          "R0@0.5": {
+            "B3": {
+              "macro_rmse": 0.0005031398169460985,
+              "weighted_rmse": 0.0005031400600200726
+            },
+            "PRISM": {
+              "macro_rmse": 0.001449149166661317,
+              "weighted_rmse": 0.0014042989793595303
+            }
+          },
+          "R0@1": {
+            "B3": {
+              "macro_rmse": 0.0016949436143715616,
+              "weighted_rmse": 0.0016949442509487135
+            },
+            "PRISM": {
+              "macro_rmse": 0.0034044636858010908,
+              "weighted_rmse": 0.0038124355491677207
+            }
+          },
+          "R0@2": {
+            "B3": {
+              "macro_rmse": 5.755941275102393e-05,
+              "weighted_rmse": 5.7559900890445985e-05
+            },
+            "PRISM": {
+              "macro_rmse": 0.0007192764331060885,
+              "weighted_rmse": 0.0011802606824338065
+            }
+          },
+          "R0@4": {
+            "B3": {
+              "macro_rmse": 0.00018803262409947499,
+              "weighted_rmse": 0.00018803347159762257
+            },
+            "PRISM": {
+              "macro_rmse": 0.0014414133869690658,
+              "weighted_rmse": 0.0015792612513339623
+            }
+          },
+          "R0@8": {
+            "B3": {
+              "macro_rmse": 9.87402510032392e-05,
+              "weighted_rmse": 9.874113466095752e-05
+            },
+            "PRISM": {
+              "macro_rmse": 0.0007846367463332155,
+              "weighted_rmse": 0.001029590260164245
+            }
+          },
+          "R1@0.25": {
+            "B3": {
+              "macro_rmse": 0.006427314790342104,
+              "weighted_rmse": 0.0057703032551603365
+            },
+            "PRISM": {
+              "macro_rmse": 0.005790897849698485,
+              "weighted_rmse": 0.005065001099584092
+            }
+          },
+          "R1@0.5": {
+            "B3": {
+              "macro_rmse": 0.005382616627408926,
+              "weighted_rmse": 0.004811049523569059
+            },
+            "PRISM": {
+              "macro_rmse": 0.006560456857629111,
+              "weighted_rmse": 0.005940251773461965
+            }
+          },
+          "R1@1": {
+            "B3": {
+              "macro_rmse": 0.005742963398591693,
+              "weighted_rmse": 0.005135990678882111
+            },
+            "PRISM": {
+              "macro_rmse": 0.003729409237286564,
+              "weighted_rmse": 0.002821295179891456
+            }
+          },
+          "R1@2": {
+            "B3": {
+              "macro_rmse": 0.004512412253165547,
+              "weighted_rmse": 0.00407254120896696
+            },
+            "PRISM": {
+              "macro_rmse": 0.0038854223037875905,
+              "weighted_rmse": 0.00297528885128706
+            }
+          },
+          "R1@4": {
+            "B3": {
+              "macro_rmse": 0.004424335082261671,
+              "weighted_rmse": 0.004003529184372904
+            },
+            "PRISM": {
+              "macro_rmse": 0.005741986192540559,
+              "weighted_rmse": 0.005134859721494865
+            }
+          },
+          "R1@8": {
+            "B3": {
+              "macro_rmse": 0.0040866818755089076,
+              "weighted_rmse": 0.0037556049443432083
+            },
+            "PRISM": {
+              "macro_rmse": 0.003906606936780823,
+              "weighted_rmse": 0.003319189820480745
+            }
+          },
+          "R2@0.25": {
+            "B3": {
+              "macro_rmse": 0.008807119638719845,
+              "weighted_rmse": 0.008112399113954385
+            },
+            "PRISM": {
+              "macro_rmse": 0.006373118651341383,
+              "weighted_rmse": 0.006003807066564345
+            }
+          },
+          "R2@0.5": {
+            "B3": {
+              "macro_rmse": 0.005401546707990538,
+              "weighted_rmse": 0.004829178189566061
+            },
+            "PRISM": {
+              "macro_rmse": 0.005417426060852366,
+              "weighted_rmse": 0.004723863752251341
+            }
+          },
+          "R2@1": {
+            "B3": {
+              "macro_rmse": 0.004780977734739057,
+              "weighted_rmse": 0.004267539766048803
+            },
+            "PRISM": {
+              "macro_rmse": 0.003451488610777741,
+              "weighted_rmse": 0.002856482434269362
+            }
+          },
+          "R2@2": {
+            "B3": {
+              "macro_rmse": 0.005243196937834668,
+              "weighted_rmse": 0.004683604476137158
+            },
+            "PRISM": {
+              "macro_rmse": 0.005394237829176745,
+              "weighted_rmse": 0.004778363661823127
+            }
+          },
+          "R2@4": {
+            "B3": {
+              "macro_rmse": 0.004401325369765467,
+              "weighted_rmse": 0.003939718270774035
+            },
+            "PRISM": {
+              "macro_rmse": 0.00416774560384372,
+              "weighted_rmse": 0.0034673300976601137
+            }
+          },
+          "R2@8": {
+            "B3": {
+              "macro_rmse": 0.0038458935310197485,
+              "weighted_rmse": 0.0034999494589638405
+            },
+            "PRISM": {
+              "macro_rmse": 0.004316852210670708,
+              "weighted_rmse": 0.0038104289647104593
+            }
+          },
+          "R3@0.25": {
+            "B3": {
+              "macro_rmse": 0.015673438161777062,
+              "weighted_rmse": 0.016696046292004253
+            },
+            "PRISM": {
+              "macro_rmse": 0.015033192991217938,
+              "weighted_rmse": 0.01432924058451517
+            }
+          },
+          "R3@0.5": {
+            "B3": {
+              "macro_rmse": 0.015946736529682218,
+              "weighted_rmse": 0.0169187525137363
+            },
+            "PRISM": {
+              "macro_rmse": 0.014380576522226534,
+              "weighted_rmse": 0.011689876100406964
+            }
+          },
+          "R3@1": {
+            "B3": {
+              "macro_rmse": 0.01535128502564877,
+              "weighted_rmse": 0.016453020298990356
+            },
+            "PRISM": {
+              "macro_rmse": 0.013286011432927784,
+              "weighted_rmse": 0.009835458707451398
+            }
+          },
+          "R3@2": {
+            "B3": {
+              "macro_rmse": 0.015218329349227469,
+              "weighted_rmse": 0.016379667408106927
+            },
+            "PRISM": {
+              "macro_rmse": 0.012538083921198529,
+              "weighted_rmse": 0.00888655906796134
+            }
+          },
+          "R3@4": {
+            "B3": {
+              "macro_rmse": 0.01520247032055249,
+              "weighted_rmse": 0.016391948616086113
+            },
+            "PRISM": {
+              "macro_rmse": 0.011943536642409288,
+              "weighted_rmse": 0.008651792532671463
+            }
+          },
+          "R3@8": {
+            "B3": {
+              "macro_rmse": 0.015207717160287428,
+              "weighted_rmse": 0.016408643205208222
+            },
+            "PRISM": {
+              "macro_rmse": 0.010221950213589428,
+              "weighted_rmse": 0.007310560200708318
+            }
+          },
+          "R4@0.25": {
+            "B3": {
+              "macro_rmse": 0.01703031391991883,
+              "weighted_rmse": 0.01765407413837018
+            },
+            "PRISM": {
+              "macro_rmse": 0.016461162216810953,
+              "weighted_rmse": 0.0165438081142939
+            }
+          },
+          "R4@0.5": {
+            "B3": {
+              "macro_rmse": 0.016179115383292825,
+              "weighted_rmse": 0.016887842539918405
+            },
+            "PRISM": {
+              "macro_rmse": 0.01501029141552266,
+              "weighted_rmse": 0.01322641716066491
+            }
+          },
+          "R4@1": {
+            "B3": {
+              "macro_rmse": 0.01603878619738145,
+              "weighted_rmse": 0.01676490908086253
+            },
+            "PRISM": {
+              "macro_rmse": 0.014046663017050072,
+              "weighted_rmse": 0.01121096853043784
+            }
+          },
+          "R4@2": {
+            "B3": {
+              "macro_rmse": 0.015741590206467666,
+              "weighted_rmse": 0.016511808465950538
+            },
+            "PRISM": {
+              "macro_rmse": 0.013387213357868728,
+              "weighted_rmse": 0.009790660554585178
+            }
+          },
+          "R4@4": {
+            "B3": {
+              "macro_rmse": 0.01575172672523913,
+              "weighted_rmse": 0.016520176392407458
+            },
+            "PRISM": {
+              "macro_rmse": 0.01238642344540898,
+              "weighted_rmse": 0.009008137915542972
+            }
+          },
+          "R4@8": {
+            "B3": {
+              "macro_rmse": 0.01578283549506769,
+              "weighted_rmse": 0.01654602721414172
+            },
+            "PRISM": {
+              "macro_rmse": 0.011232362584553159,
+              "weighted_rmse": 0.008205952712887137
+            }
+          },
+          "R5@0.25": {
+            "B3": {
+              "macro_rmse": 0.0006485079566209984,
+              "weighted_rmse": 0.0005838031390834687
+            },
+            "PRISM": {
+              "macro_rmse": 0.002495554432985669,
+              "weighted_rmse": 0.002429360573466599
+            }
+          },
+          "R5@0.5": {
+            "B3": {
+              "macro_rmse": 0.0006673333397830017,
+              "weighted_rmse": 0.0006004799863426987
+            },
+            "PRISM": {
+              "macro_rmse": 0.001787729897616193,
+              "weighted_rmse": 0.001753745722677492
+            }
+          },
+          "R5@1": {
+            "B3": {
+              "macro_rmse": 0.0015033627961262741,
+              "weighted_rmse": 0.001502359152581592
+            },
+            "PRISM": {
+              "macro_rmse": 0.000959193647436194,
+              "weighted_rmse": 0.0010069270971008375
+            }
+          },
+          "R5@2": {
+            "B3": {
+              "macro_rmse": 0.0006898241389101859,
+              "weighted_rmse": 0.0006433201713061922
+            },
+            "PRISM": {
+              "macro_rmse": 0.001326792163668967,
+              "weighted_rmse": 0.00127467759763639
+            }
+          },
+          "R5@4": {
+            "B3": {
+              "macro_rmse": 0.000663925391503896,
+              "weighted_rmse": 0.000597278105453342
+            },
+            "PRISM": {
+              "macro_rmse": 0.0016520522590276166,
+              "weighted_rmse": 0.0016158267275404774
+            }
+          },
+          "R5@8": {
+            "B3": {
+              "macro_rmse": 0.0006494849216370831,
+              "weighted_rmse": 0.0005927952245887657
+            },
+            "PRISM": {
+              "macro_rmse": 0.001674651941392928,
+              "weighted_rmse": 0.0016728733549758409
+            }
+          },
+          "R6@0.25": {
+            "B3": {
+              "macro_rmse": 0.001951919025761791,
+              "weighted_rmse": 0.0018005776846646527
+            },
+            "PRISM": {
+              "macro_rmse": 0.001722146250557284,
+              "weighted_rmse": 0.0016422080855144862
+            }
+          },
+          "R6@0.5": {
+            "B3": {
+              "macro_rmse": 0.0007538381258715589,
+              "weighted_rmse": 0.0007349860313240296
+            },
+            "PRISM": {
+              "macro_rmse": 0.0008816567259289491,
+              "weighted_rmse": 0.0009462212017575808
+            }
+          },
+          "R6@1": {
+            "B3": {
+              "macro_rmse": 0.0008356119435235221,
+              "weighted_rmse": 0.0007800437946228271
+            },
+            "PRISM": {
+              "macro_rmse": 0.000805245791858808,
+              "weighted_rmse": 0.0007857706286029494
+            }
+          },
+          "R6@2": {
+            "B3": {
+              "macro_rmse": 0.0009652782803181597,
+              "weighted_rmse": 0.0008769796990816752
+            },
+            "PRISM": {
+              "macro_rmse": 0.0007992833430927151,
+              "weighted_rmse": 0.0006989569039566977
+            }
+          },
+          "R6@4": {
+            "B3": {
+              "macro_rmse": 0.0009194854211480758,
+              "weighted_rmse": 0.0008406777946148143
+            },
+            "PRISM": {
+              "macro_rmse": 0.0013838812796352746,
+              "weighted_rmse": 0.001224304971927465
+            }
+          },
+          "R6@8": {
+            "B3": {
+              "macro_rmse": 0.0010852013964530837,
+              "weighted_rmse": 0.0009784551540810002
+            },
+            "PRISM": {
+              "macro_rmse": 0.0015446998332335152,
+              "weighted_rmse": 0.0014324558901644725
+            }
+          },
+          "R7@0.25": {
+            "B3": {
+              "macro_rmse": 0.013614504777504742,
+              "weighted_rmse": 0.014466461112797424
+            },
+            "PRISM": {
+              "macro_rmse": 0.010192126957345232,
+              "weighted_rmse": 0.010515591951196536
+            }
+          },
+          "R7@0.5": {
+            "B3": {
+              "macro_rmse": 0.01369143548635197,
+              "weighted_rmse": 0.014347352737699553
+            },
+            "PRISM": {
+              "macro_rmse": 0.007846960711406933,
+              "weighted_rmse": 0.00639852676054949
+            }
+          },
+          "R7@1": {
+            "B3": {
+              "macro_rmse": 0.0137757549873872,
+              "weighted_rmse": 0.01437011873964458
+            },
+            "PRISM": {
+              "macro_rmse": 0.009221414414103417,
+              "weighted_rmse": 0.007452759481880555
+            }
+          },
+          "R7@2": {
+            "B3": {
+              "macro_rmse": 0.01379790158459269,
+              "weighted_rmse": 0.014378705089378602
+            },
+            "PRISM": {
+              "macro_rmse": 0.007834324838044271,
+              "weighted_rmse": 0.005560043516588781
+            }
+          },
+          "R7@4": {
+            "B3": {
+              "macro_rmse": 0.013816821991312555,
+              "weighted_rmse": 0.01438661415893117
+            },
+            "PRISM": {
+              "macro_rmse": 0.00940569761697429,
+              "weighted_rmse": 0.00715114909045991
+            }
+          },
+          "R7@8": {
+            "B3": {
+              "macro_rmse": 0.013671008921196005,
+              "weighted_rmse": 0.014345788095338654
+            },
+            "PRISM": {
+              "macro_rmse": 0.008640240938931027,
+              "weighted_rmse": 0.00658598933553233
+            }
+          }
+        },
+        "threshold": {
+          "10": {
+            "released_groups": 3055,
+            "released_unit_rate": 0.9976803460367691
+          },
+          "100": {
+            "released_groups": 1498,
+            "released_unit_rate": 0.926740853602251
+          },
+          "20": {
+            "released_groups": 2698,
+            "released_unit_rate": 0.9921016651336244
+          },
+          "50": {
+            "released_groups": 2033,
+            "released_unit_rate": 0.9679994179145486
+          }
+        }
+      },
+      "topic": "privacy_utility"
+    },
+    {
+      "order": 12,
+      "result": {
+        "claim_boundary": "attribution credit is not causal incrementality",
+        "conversion_paths": 364,
+        "methods": {
+          "A0_last_click": {
+            "attribution_share_l1": 1.008627989109402,
+            "campaigns": 154,
+            "kendall": 0.09351651819339299,
+            "spearman": 0.12323872421471958,
+            "top10_overlap": 0.3
+          },
+          "A1_first_click": {
+            "attribution_share_l1": 1.0935136786594977,
+            "campaigns": 154,
+            "kendall": 0.07312080424866228,
+            "spearman": 0.09756028647151853,
+            "top10_overlap": 0.3
+          },
+          "A2_linear": {
+            "attribution_share_l1": 1.039125596298542,
+            "campaigns": 154,
+            "kendall": 0.12345916206969981,
+            "spearman": 0.1643164471870589,
+            "top10_overlap": 0.5
+          },
+          "A3_time_decay": {
+            "attribution_share_l1": 1.1007555689192572,
+            "campaigns": 154,
+            "kendall": 0.10295350157663186,
+            "spearman": 0.14450316126515522,
+            "top10_overlap": 0.2
+          },
+          "A4_position_based": {
+            "attribution_share_l1": 1.022695735039116,
+            "campaigns": 154,
+            "kendall": 0.14884531666048167,
+            "spearman": 0.19149481530972146,
+            "top10_overlap": 0.3
+          },
+          "A5_markov_removal": {
+            "attribution_share_l1": 0.3094216545927238,
+            "campaigns": 21,
+            "kendall": 0.3086066999241838,
+            "spearman": 0.3692744729379982,
+            "top10_overlap": 0.3
+          }
+        },
+        "sample_paths": 4769
+      },
+      "topic": "attribution"
+    },
+    {
+      "order": 13,
+      "result": {
+        "F0_known_null_R0": {
+          "interval_false_discovery_rate": 0.015322347499277248,
+          "limits": {
+            "absolute_weighted_mean": 0.01,
+            "false_discovery_rate": 0.1
+          },
+          "status": "PASS",
+          "weighted_mean_effect": -0.0006451323177801481
+        },
+        "F1_treatment_permutation": {
+          "interval_false_discovery_rate": 0.0037604859704946487,
+          "limits": {
+            "absolute_weighted_mean": 0.01,
+            "false_discovery_rate": 0.1
+          },
+          "status": "PASS",
+          "weighted_mean_effect": -0.0011417659114797989
+        },
+        "F2_negative_control": {
+          "interval_false_discovery_rate": 0.006071118820468344,
+          "limits": {
+            "absolute_weighted_mean": 0.01,
+            "false_discovery_rate": 0.1
+          },
+          "status": "PASS",
+          "weighted_mean_effect": -0.0003752376932478669
+        },
+        "F3_privacy_noise_only": {
+          "interval_false_discovery_rate": 0.0008673026886383347,
+          "limits": {
+            "absolute_weighted_mean": 0.01,
+            "false_discovery_rate": 0.1
+          },
+          "status": "PASS",
+          "weighted_mean_effect": -8.792870436017297e-05
+        }
+      },
+      "topic": "falsification"
+    },
+    {
+      "order": 14,
+      "result": {
+        "order": {
+          "C0": "B3",
+          "C1": "+campaign response hierarchy",
+          "C2": "+segment response hierarchy",
+          "C3": "+explicit numerator/denominator privacy likelihood",
+          "C4": "+treatment-effect hierarchy (full PRISM-HB)"
+        },
+        "scores": {
+          "C1@1": {
+            "bias": -0.006805055795807416,
+            "macro_rmse": 0.0063407903196512185,
+            "mae": 0.005513046021887644,
+            "weighted_rmse": 0.007487960702240061
+          },
+          "C2@1": {
+            "bias": -0.006533824245958735,
+            "macro_rmse": 0.005982332980017029,
+            "mae": 0.0050946871919591305,
+            "weighted_rmse": 0.007247982006025171
+          },
+          "C3@1": {
+            "bias": 0.00035589694526134654,
+            "macro_rmse": 0.0032392388891036837,
+            "mae": 0.002531378997346188,
+            "weighted_rmse": 0.0022094123930554953
+          },
+          "C4@0.25": {
+            "bias": -0.004171333175194022,
+            "macro_rmse": 0.004329044841187024,
+            "mae": 0.0035191825857626975,
+            "weighted_rmse": 0.004828057886605948
+          },
+          "C4@0.5": {
+            "bias": -0.0018748915192646103,
+            "macro_rmse": 0.0029359892012241584,
+            "mae": 0.002223980096191812,
+            "weighted_rmse": 0.0031360264821157324
+          },
+          "C4@1": {
+            "bias": 0.00045357750122890347,
+            "macro_rmse": 0.003852349191420031,
+            "mae": 0.002950080272544341,
+            "weighted_rmse": 0.00338252717547291
+          },
+          "C4@2": {
+            "bias": -0.0017918253594414464,
+            "macro_rmse": 0.003714049514882278,
+            "mae": 0.0029001579926625424,
+            "weighted_rmse": 0.00366694484802109
+          },
+          "C4@4": {
+            "bias": -0.002838757267020817,
+            "macro_rmse": 0.004318252498953981,
+            "mae": 0.003424101953914131,
+            "weighted_rmse": 0.004158872141305393
+          },
+          "C4@8": {
+            "bias": -0.0006752276108454415,
+            "macro_rmse": 0.004194623981286748,
+            "mae": 0.0031396525381830022,
+            "weighted_rmse": 0.003790763484510044
+          }
+        }
+      },
+      "topic": "ablation"
+    },
+    {
+      "order": 15,
+      "result": [
+        "epsilon",
+        "threshold",
+        "contribution limits",
+        "prior scale",
+        "hierarchy",
+        "segmentation",
+        "decision budget",
+        "attribution lookback"
+      ],
+      "topic": "sensitivity"
+    },
+    {
+      "order": 16,
+      "result": {
+        "primary_gpu_seconds": 3175.506450899993,
+        "secondary_gpu_seconds": 2877.520992200123
+      },
+      "topic": "runtime"
+    }
+  ],
+  "phase": "P16",
+  "primary_verdict": "NON_PROMOTABLE",
+  "status": "PASS"
+}

@@ -1,0 +1,34 @@
+{
+  "phase": "P03",
+  "validated_at": "2026-09-04T19:37:48.018Z",
+  "status": "PASS",
+  "engine": "DuckDB 1.5.5",
+  "format": "Parquet with Zstandard compression",
+  "T1": {
+    "raw_rows": 13979592,
+    "parquet_rows": 13979592,
+    "row_id_min": 0,
+    "row_id_max": 13979591,
+    "distinct_row_ids": 13979592,
+    "parquet_bytes": 200066420,
+    "parquet_sha256": "102587eec939fea7247e785fee6f5b9dd0ab3957ec0c6f42322c109db7a8f25c",
+    "schema_columns": 17,
+    "reconciliation": "PASS"
+  },
+  "T2": {
+    "raw_rows": 16468027,
+    "parquet_rows": 16468027,
+    "row_id_min": 0,
+    "row_id_max": 16468026,
+    "distinct_row_ids": 16468027,
+    "parquet_bytes": 388643838,
+    "parquet_sha256": "7af4d9de1783cd645f0a2f9f0f1d8acf76bd4791afb7ec468598b57ceb042d98",
+    "schema_columns": 23,
+    "reconciliation": "PASS"
+  },
+  "catalog": {
+    "path": "data/marts/prism_ads.duckdb",
+    "sha256": "2fe61e1f343a448c46f270b18140c43121b8bf0eeb0c8798bdf0a89b7ce84019",
+    "objects": ["t1_uplift", "t2_attribution", "warehouse_metadata"]
+  }
+}

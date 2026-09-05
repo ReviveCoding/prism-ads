@@ -1,0 +1,58 @@
+{
+  "phase": "P17",
+  "audited_at": "2026-09-04T23:40:00.000Z",
+  "status": "PASS_WITH_DISCLOSED_QUALITY_GAP",
+  "specification": {
+    "version": "2.2",
+    "master_copy_match": "PASS",
+    "sha256": "9b6c4b7042ff75f2648736b04a68593408e09635b0ed8ee31b5fd2342f577be9"
+  },
+  "controller": {
+    "status": "PASS",
+    "ledger_records_before_close": 38,
+    "registered_artifacts_before_p17_publication": 87,
+    "registry_hash_errors": 0
+  },
+  "receipts": {
+    "P00_through_P16_present": true,
+    "statuses_valid": true
+  },
+  "scientific_integrity": {
+    "data_manifests": "PASS",
+    "raw_data_git_tracked_files": 0,
+    "split_protection": "PASS",
+    "final_data_isolation": "PASS",
+    "contribution_bounds": "PASS",
+    "privacy_accounting": "PASS",
+    "baseline_selection": "PASS",
+    "candidate_identity": "PASS",
+    "active_freeze_identities": "23/23 PASS",
+    "locked_artifacts": "PASS",
+    "canonical_analysis_rows": 399040,
+    "canonical_analysis_missing_truth": 0,
+    "final_scientific_decision": "RETAIN_BASELINE",
+    "claim_audit": "PASS"
+  },
+  "portfolio": {
+    "required_reports": "PASS",
+    "required_figures": "15/15 PASS",
+    "dashboard": "PASS",
+    "readme": "PASS",
+    "language_audit": "PASS; all matched high-risk terms are qualified, rejected, or prohibited claims"
+  },
+  "software_quality": {
+    "python": "3.12.10",
+    "pytest": "31 passed",
+    "ruff": "PASS",
+    "mypy_strict": "PASS",
+    "branch_coverage_percent": 55,
+    "approximate_target_percent": 80,
+    "coverage_target_met": false,
+    "disposition": "Disclosed limitation; does not override the locked scientific decision"
+  },
+  "git": {
+    "repository": true,
+    "head": null,
+    "status": "unborn HEAD; project files untracked"
+  }
+}

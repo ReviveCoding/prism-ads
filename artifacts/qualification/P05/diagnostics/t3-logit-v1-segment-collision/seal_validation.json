@@ -1,0 +1,47 @@
+{
+  "distinct_observation_units": 7813401,
+  "gates": {
+    "candidate_truth_column_leakage": true,
+    "group_truth_complete": true,
+    "outcome_reproducibility": true,
+    "row_lineage": true,
+    "treatment_reproducibility": true,
+    "user_role_leakage": true
+  },
+  "group_truth": {
+    "campaign": {
+      "null_true_ate": 0,
+      "regimes": 8,
+      "rows": 5400
+    },
+    "campaign_segment": {
+      "null_true_ate": 0,
+      "regimes": 8,
+      "rows": 31336
+    },
+    "segment": {
+      "null_true_ate": 0,
+      "regimes": 8,
+      "rows": 48
+    }
+  },
+  "individual_truth_rows": 7813401,
+  "leaked_truth_columns": [],
+  "observation_rows": 7813401,
+  "outcome_mismatches": {
+    "R0": 0,
+    "R1": 0,
+    "R2": 0,
+    "R3": 0,
+    "R4": 0,
+    "R5": 0,
+    "R6": 0,
+    "R7": 0
+  },
+  "phase": "P05",
+  "status": "PASS",
+  "treatment_mismatches": 0,
+  "units": 7813401,
+  "user_role_leakage": 0,
+  "validated_at": "2026-09-04T19:54:29.106759Z"
+}

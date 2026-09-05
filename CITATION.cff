@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this research software benchmark, please cite it using this metadata."
+title: "PRISM-Ads: Privacy-Resilient Incrementality, Statistics & Measurement for Advertising"
+type: software
+authors:
+  - family-names: "Bae"
+    given-names: "Jinwoo"
+version: "2.2"
+date-released: 2026-09-04
+license: Apache-2.0
+abstract: >-
+  A governed research software benchmark for privacy-preserving advertising measurement,
+  causal incrementality, attribution, hierarchical Bayes, and decision-quality evaluation.

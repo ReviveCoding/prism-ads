@@ -1,0 +1,48 @@
+{
+  "phase": "P17",
+  "status": "PASS_WITH_DISCLOSED_QUALITY_GAP",
+  "completed_at": "2026-09-04T23:42:00.000Z",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "locked_run_id": "locked-r2-20260904-001",
+  "final_scientific_decision": "RETAIN_BASELINE",
+  "outputs": [
+    "reports/EXECUTIVE_MEMO.md",
+    "reports/MEASUREMENT_READOUT.md",
+    "reports/TECHNICAL_REPORT.md",
+    "reports/DATA_CARD.md",
+    "reports/PRIVACY_CARD.md",
+    "reports/MODEL_CARD.md",
+    "reports/EXPERIMENT_CARD.md",
+    "reports/DECISION_RECORD.md",
+    "reports/CLAIM_LEDGER.md",
+    "reports/INTERVIEW_NOTES.md",
+    "reports/FINAL_STATUS.md",
+    "reports/FIGURE_INDEX.md",
+    "reports/figure_data.json",
+    "dashboard/index.html",
+    "README.md",
+    "artifacts/runtime/p17_final_audit.json"
+  ],
+  "artifact_identities": {
+    "final_status_sha256": "842b9c0119c5fef9a2dfeaf76e56b5524e382384e0a584090389595b0939fd3d",
+    "claim_ledger_sha256": "941837f79f66eae7ee6ab813f7fe37b8d641d0f599f821494b0789f878ea5fd2",
+    "figure_data_sha256": "c4cd4f5a0f0b7c8304182fca9c8d312b3da44a40e18ff9dc6f4c2a9daef3c78f",
+    "dashboard_sha256": "ceb164d70f597e1e086199d57aa60fd9df5be60b67999aa352f3c2673d790c12",
+    "readme_sha256": "cb546b8dbc5b584ba6b980e2517f771fb23cc754ada43ba5094c15b8c59c5113",
+    "final_audit_sha256": "a2dae70d9ac697928c727868ee66cde4d704ebdf60ab9b3bf0aff14f0b3ed613"
+  },
+  "gates": {
+    "required_reports": "12/12 PASS",
+    "required_figures": "15/15 PASS",
+    "dashboard": "PASS",
+    "readme": "PASS",
+    "language_audit": "PASS",
+    "controller_and_registered_hashes": "PASS",
+    "freeze": "23/23 PASS",
+    "tests": "31 passed",
+    "ruff": "PASS",
+    "mypy": "PASS",
+    "branch_coverage": "55%; BELOW_APPROXIMATE_80_PERCENT_TARGET_DISCLOSED"
+  },
+  "next_phase": null
+}

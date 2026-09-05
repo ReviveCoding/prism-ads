@@ -1,0 +1,129 @@
+{
+  "bytes": 388643838,
+  "compression": "zstd",
+  "created_at": "2026-09-04T19:36:35.939171Z",
+  "dataset_id": "T2",
+  "format": "parquet",
+  "manifest_version": 1,
+  "path": "data/staged/t2_attribution.parquet",
+  "rows": 16468027,
+  "schema": [
+    {
+      "name": "row_id",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "timestamp",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "uid",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "campaign",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "conversion",
+      "nullable": "YES",
+      "type": "TINYINT"
+    },
+    {
+      "name": "conversion_timestamp",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "conversion_id",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "attribution",
+      "nullable": "YES",
+      "type": "TINYINT"
+    },
+    {
+      "name": "click",
+      "nullable": "YES",
+      "type": "TINYINT"
+    },
+    {
+      "name": "click_pos",
+      "nullable": "YES",
+      "type": "INTEGER"
+    },
+    {
+      "name": "click_nb",
+      "nullable": "YES",
+      "type": "INTEGER"
+    },
+    {
+      "name": "cost",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "cpo",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "time_since_last_click",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat1",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat2",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat3",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat4",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat5",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat6",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat7",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat8",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "cat9",
+      "nullable": "YES",
+      "type": "BIGINT"
+    }
+  ],
+  "sha256": "7af4d9de1783cd645f0a2f9f0f1d8acf76bd4791afb7ec468598b57ceb042d98",
+  "source_sha256": "242acae50d9eadda739da1dab7c5fec6f4aee3e4e17b315e2c42c2d42f339d09"
+}

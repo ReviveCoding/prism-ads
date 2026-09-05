@@ -1,0 +1,25 @@
+spec_version: "2.2"
+generator_id: t3-logit-v1.1
+unit: user_campaign
+assignment_probability: 0.5
+assignment_seed: 2026090401
+outcome_seed: 2026090402
+segment_count: 8
+segment_definition: "md5_number_lower(dominant_cat1 || ':' || campaign) modulo 8"
+roles:
+  t2_train_hash_0_1_of_5: generator_development
+  t2_train_hash_2_3_4_of_5: method_development
+  t2_validation: method_validation
+  t2_calibration: calibration
+  t2_policy: policy
+  t2_qualification: qualification
+  t2_locked_final: locked_final
+regimes:
+  R0: null
+  R1: homogeneous_positive
+  R2: smooth_heterogeneous
+  R3: sparse_strong
+  R4: mixed_positive_negative
+  R5: long_tail_campaign_heterogeneity
+  R6: low_base_rate_conversion
+  R7: interaction_heavy_difficult

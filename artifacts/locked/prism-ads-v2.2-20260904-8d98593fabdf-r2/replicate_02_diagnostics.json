@@ -1,0 +1,34 @@
+{
+  "fits": [
+    {
+      "final_loss": 2612.045368552208,
+      "finite_loss": true,
+      "initial_loss": 144256.8021114692,
+      "peak_vram_allocated_bytes": 64389632,
+      "peak_vram_reserved_bytes": 73400320,
+      "runtime_seconds": 97.09838219999801,
+      "seed": 2026091420
+    },
+    {
+      "final_loss": 2612.4364672601223,
+      "finite_loss": true,
+      "initial_loss": 165131.70571390167,
+      "peak_vram_allocated_bytes": 64389632,
+      "peak_vram_reserved_bytes": 73400320,
+      "runtime_seconds": 113.71727620001184,
+      "seed": 2026091421
+    },
+    {
+      "final_loss": 2613.3003965616226,
+      "finite_loss": true,
+      "initial_loss": 146769.1296963282,
+      "peak_vram_allocated_bytes": 64389632,
+      "peak_vram_reserved_bytes": 73400320,
+      "runtime_seconds": 102.05068899999605,
+      "seed": 2026091422
+    }
+  ],
+  "privacy_seed": 2026091302,
+  "replicate": 2,
+  "seed_stability_rmse": 0.0023674173280596733
+}

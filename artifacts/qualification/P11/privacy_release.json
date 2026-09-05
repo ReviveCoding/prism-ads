@@ -1,0 +1,20 @@
+{
+  "phase": "P11",
+  "status": "PASS",
+  "release_schema": ["n0", "n1", "y0", "y1"],
+  "neighboring_relation": "user-level add/remove-one",
+  "epsilon": 1.0,
+  "delta": 1e-7,
+  "mechanism": "analytic Gaussian vector release",
+  "l2_sensitivity": 2.449489742783178,
+  "noise_standard_deviation": 11.46033717766397,
+  "composition": "one vector release per protected analysis",
+  "contribution_limits": {
+    "max_campaigns_per_user": 3,
+    "max_impressions_per_user_per_campaign": 7,
+    "max_impressions_per_user_per_window": 8,
+    "max_clicks_per_user": 4,
+    "max_conversions_per_user": 1
+  },
+  "selection_basis": "epsilon fixed from privacy policy and population-scale release feasibility; not selected by PRISM performance"
+}

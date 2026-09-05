@@ -1,0 +1,66 @@
+{
+  "T1_randomized_references": {
+    "NR0": {
+      "lower_95": -0.0013802807805948954,
+      "standard_error": 0.000996670135267973,
+      "upper_95": 0.002526594358588887,
+      "value": 0.0005731567889969958
+    },
+    "NR1": {
+      "lower_95": -0.0008750364232675064,
+      "standard_error": 0.0008343630606925722,
+      "upper_95": 0.0023956066747085917,
+      "value": 0.0007602851257205426
+    },
+    "NR2": {
+      "lower_95": -0.0010465325372740857,
+      "standard_error": 0.0008948286099417037,
+      "upper_95": 0.002461131158369473,
+      "value": 0.0007072993105476937
+    },
+    "outcome": "conversion",
+    "role": "validation",
+    "rows": 20987
+  },
+  "T3_development": {
+    "effect_regime": "R2",
+    "fit": {
+      "B3_hyperparameters": {
+        "mu": 0.00445291417492297,
+        "tau2": 0.0015963901308631337
+      },
+      "groups": 3459
+    },
+    "predictions": {
+      "bytes": 100573,
+      "path": "artifacts/development/P06/t3_r2_predictions.parquet",
+      "sha256": "ea032ff3df404553005105e53b81b574dee3c9fbbabff413bfa26c06f9f6183b",
+      "status": "frozen_before_truth_scoring"
+    },
+    "privacy_status": "aggregate-only interface validated; no formal DP claim until P07",
+    "role": "method_validation",
+    "scores": {
+      "B1": {
+        "groups": 3459,
+        "macro_rmse": 0.07260382777952885,
+        "mae": 0.03596233305405869,
+        "weighted_rmse": 0.021238835813730643
+      },
+      "B2": {
+        "groups": 3459,
+        "macro_rmse": 0.07260382777952887,
+        "mae": 0.03596233305405869,
+        "weighted_rmse": 0.02123883581373064
+      },
+      "B3": {
+        "groups": 3459,
+        "macro_rmse": 0.03323228348692417,
+        "mae": 0.013250642081555335,
+        "weighted_rmse": 0.012584700624527769
+      }
+    }
+  },
+  "created_at": "2026-09-04T20:04:15.459351Z",
+  "phase": "P06",
+  "status": "PASS"
+}

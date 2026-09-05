@@ -1,0 +1,26 @@
+{
+  "phase": "P03",
+  "status": "PASS",
+  "completed_at": "2026-09-04T19:37:48.018Z",
+  "inputs": {
+    "T1_raw_sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+    "T2_raw_sha256": "242acae50d9eadda739da1dab7c5fec6f4aee3e4e17b315e2c42c2d42f339d09"
+  },
+  "outputs": [
+    "data/staged/t1_uplift.parquet",
+    "data/staged/t2_attribution.parquet",
+    "data/manifests/t1_warehouse_manifest.json",
+    "data/manifests/t2_warehouse_manifest.json",
+    "data/marts/prism_ads.duckdb",
+    "artifacts/runtime/p03_warehouse_validation.json"
+  ],
+  "gates": {
+    "typed_parquet": "PASS",
+    "T1_row_reconciliation": "13979592 == 13979592",
+    "T2_row_reconciliation": "16468027 == 16468027",
+    "stable_unique_row_ids": "PASS",
+    "warehouse_catalog": "PASS",
+    "sql_foundation": "PASS"
+  },
+  "next_phase": "P04"
+}

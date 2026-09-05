@@ -1,0 +1,1 @@
+"""Protected scientific experiment construction."""

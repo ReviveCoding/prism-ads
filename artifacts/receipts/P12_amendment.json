@@ -1,0 +1,17 @@
+{
+  "phase": "P12",
+  "status": "PASS",
+  "completed_at": "2026-09-04T21:32:00.000Z",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "supersedes": "prism-ads-v2.2-20260904-8d98593fabdf",
+  "scientific_choices_changed": false,
+  "reason": "Bind the dedicated locked-primary orchestrator before the one-way locked-start transition.",
+  "gates": {
+    "locked_not_started": "PASS",
+    "superseded_freeze_preserved": "PASS",
+    "runner_static_analysis": "PASS",
+    "manifest_hashes": "23 of 23 PASS",
+    "tests": "31 passed"
+  },
+  "next_phase": "P13"
+}

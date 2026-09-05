@@ -1,0 +1,26 @@
+{
+  "phase": "P01",
+  "validated_at": "2026-09-04T19:22:35.098Z",
+  "status": "PASS",
+  "python": "3.12.10",
+  "package_version": "0.1.0",
+  "checks": {
+    "editable_install": "PASS",
+    "package_import": "PASS",
+    "status_command": "PASS",
+    "controller_verify_command": "PASS",
+    "pytest": "4 passed",
+    "ruff": "PASS",
+    "mypy": "PASS",
+    "raw_data_git_tracked": false
+  },
+  "source_hashes": {
+    "pyproject.toml": "b1d78fafcdbecec59fb51c64d5ed807cff08b98871af2a9cf25ae67755842309",
+    "src/prism_ads/pipeline/controller.py": "30395e6cea6aec5ef748e7393d796e3f0ac02cac165cd6707829f9c12e127420",
+    "src/prism_ads/pipeline/__main__.py": "92021e7df5805b3d1bb729cce26ad651a888badbad5fa7dac487c64462b13c7c"
+  },
+  "limitations": [
+    "Remote CI has not run and is not claimed.",
+    "Scientific data and modeling dependencies are intentionally deferred to their phases."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "P16",
+  "status": "PASS",
+  "completed_at": "2026-09-04T23:30:00.000Z",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "final_scientific_decision": "RETAIN_BASELINE",
+  "outputs": [
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/final_analysis.json"
+  ],
+  "gates": {
+    "mandated_analysis_order": "16 of 16 PASS",
+    "artifact_integrity": "PASS",
+    "data_privacy_inference": "PASS",
+    "primary_materiality": "PASS",
+    "macro_long_tail_decision": "PASS",
+    "interval_coverage": "FAIL",
+    "final_decision_valid": "PASS",
+    "tests": "31 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "next_phase": "P17"
+}

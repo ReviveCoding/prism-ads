@@ -1,0 +1,5 @@
+spec_version: "2.2"
+tier: 1
+roles_allowed:
+  - calibration
+seed: 20260905

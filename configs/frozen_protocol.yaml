@@ -1,0 +1,79 @@
+spec_version: "2.2"
+status: FROZEN
+freeze_id: prism-ads-v2.2-20260904-8d98593fabdf
+frozen_at: "2026-09-04T21:24:30.000Z"
+data:
+  T3_generator: t3-logit-v1.1
+  T3_observations_sha256: 9e2d34f5760512a97bf5bb1bf195ce340266c3a8eb26e2d9f4b1d92867bf717b
+  T3_structure_sha256: 9094a79407a8f3d717701c83e9fc14ca776691b846da23307115a460f60e3a9f
+  T3_truth_campaign_segment_sha256: cff782270843a4d8fef2a75ed7f27752164686d96f1f5c8a8076379ffaf806f2
+  primary_role: locked_final
+  role_logic: P04/P05 protected user-disjoint deterministic roles
+privacy:
+  mechanism: analytic Gaussian vector release
+  accountant: google-dp-accounting PLD 0.6.0 pessimistic
+  neighboring_relation: user-level add/remove-one
+  epsilon: 1.0
+  delta: 0.0000001
+  l2_sensitivity: 2.449489742783178
+  noise_standard_deviation: 11.46033717766397
+  contribution_limits:
+    max_campaigns_per_user: 3
+    max_impressions_per_user_per_campaign: 7
+    max_impressions_per_user_per_window: 8
+    max_clicks_per_user: 4
+    max_conversions_per_user: 1
+models:
+  baseline: B3-empirical-bayes-private-aggregate-v1
+  candidate: PRISM-HB-pyro-rate-v2-effect-scale-0.05
+  candidate_backend: Pyro 1.9.1 / PyTorch 2.14.0+cu130
+  response_hierarchy: campaign and segment noncentered effects
+  treatment_effect_hierarchy: campaign and segment noncentered effects
+  privacy_likelihood: Gaussian numerator/denominator variance propagation
+  treatment_effect_scale_prior: HalfNormal(0.05)
+  global_treatment_effect_prior: Normal(0, 0.5)
+  campaign_response_scale_prior: HalfNormal(0.5)
+  segment_response_scale_prior: HalfNormal(0.5)
+primary:
+  regime: R2
+  endpoint: population_weighted_campaign_segment_treatment_effect_rmse
+  materiality_relative_improvement: 0.05
+  privacy_replicates: 10
+  privacy_seed_base: 2026091300
+  inference_seeds_per_replicate: 3
+  inference_seed_base: 2026091400
+  svi_steps: 1000
+  posterior_draws: 500
+  point_combination: median of initialization-specific posterior means
+  interval_combination: conservative envelope of initialization-specific 95% intervals
+uncertainty:
+  outer_unit: campaign cluster
+  bootstrap_replicates: 1000
+  bootstrap_seed: 2026091500
+  inner_unit: privacy mechanism replicate
+  rule: privacy draws are nested and are not treated as independent datasets
+multiplicity:
+  primary: none
+  guardrails: Holm
+  exploratory: Benjamini-Hochberg FDR
+guardrails:
+  macro_rmse_relative_deterioration_max: 0.10
+  interval_coverage_min: 0.80
+  bottom_campaign_quintile_rmse_relative_deterioration_max: 0.10
+  normalized_top10_decision_regret_max: 0.02
+  normalized_top25_decision_regret_max: 0.02
+falsification:
+  required: [F0_known_null, F1_treatment_permutation, F2_negative_control, F3_privacy_noise_only]
+  maximum_false_discovery_rate: 0.10
+promotion:
+  evidence_integrity: PASS
+  inference_health: PASS
+  all_falsification: PASS
+  paired_difference_interval_lower_bound_min: 0.0
+  relative_weighted_rmse_improvement_min: 0.05
+  all_guardrails: PASS
+secondary:
+  epsilon_grid: [0.25, 0.5, 1, 2, 4, 8]
+  regimes: [R0, R1, R2, R3, R4, R5, R6, R7]
+  threshold_k: [10, 20, 50, 100]
+  attribution_lookback_days: [1, 7, 28]

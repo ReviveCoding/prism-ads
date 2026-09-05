@@ -1,0 +1,36 @@
+{
+  "phase": "P05",
+  "status": "PASS",
+  "completed_at": "2026-09-04T19:57:06.261Z",
+  "generator_id": "t3-logit-v1.1",
+  "inputs": {
+    "T2_roles_sha256": "77378feff7cd6b20d83eb9a2d44850779399f877b07185485550fbf96b63cd09",
+    "generator_config_sha256": "470ff3359e40062d5e5e1d29e1179f7f88df84bfeb75496ef8fc087fea0176ed"
+  },
+  "outputs": [
+    "data/validated/t3_structure.parquet",
+    "data/validated/t3_observations.parquet",
+    "artifacts/qualification/P05/sealed_truth/t3_individual_truth.parquet",
+    "artifacts/qualification/P05/sealed_truth/t3_campaign_truth.parquet",
+    "artifacts/qualification/P05/sealed_truth/t3_segment_truth.parquet",
+    "artifacts/qualification/P05/sealed_truth/t3_campaign_segment_truth.parquet",
+    "artifacts/qualification/P05/generator_validation.json",
+    "artifacts/qualification/P05/seal_validation.json"
+  ],
+  "preserved_negative_evidence": "artifacts/qualification/P05/diagnostics/t3-logit-v1-segment-collision",
+  "gates": {
+    "R0_through_R7_preregistered": "PASS",
+    "eight_segments_realized": "PASS",
+    "probability_bounds": "PASS",
+    "null_regime": "PASS",
+    "treatment_reproducibility": "PASS",
+    "outcome_reproducibility": "PASS",
+    "truth_sealed": "PASS",
+    "candidate_truth_column_leakage": "PASS",
+    "user_role_leakage": "PASS",
+    "tests": "15 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "next_phase": "P06"
+}

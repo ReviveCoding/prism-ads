@@ -1,0 +1,52 @@
+{
+  "composition": "single vector release",
+  "contribution_limits": {
+    "max_campaigns_per_user": 4,
+    "max_clicks_per_user": 4,
+    "max_conversions_per_user": 1,
+    "max_impressions_per_user_per_campaign": 10,
+    "max_impressions_per_user_per_window": 20
+  },
+  "created_at": "2026-09-04T20:08:28.362517Z",
+  "delta": 1e-06,
+  "epsilon": 1.0,
+  "input_vector": [
+    [
+      100.0,
+      5.0
+    ],
+    [
+      80.0,
+      2.0
+    ],
+    [
+      12.0,
+      1.0
+    ]
+  ],
+  "mechanism": "analytic Gaussian vector mechanism",
+  "neighboring_relation": "user-level add/remove-one",
+  "noise_standard_deviation": 11.949196363914613,
+  "phase": "P07",
+  "release_schema": [
+    "bounded_user_count",
+    "bounded_binary_success_count"
+  ],
+  "released_vector": [
+    [
+      100.13672067539338,
+      28.274586206889133
+    ],
+    [
+      42.23260425764567,
+      3.6073452852372814
+    ],
+    [
+      -0.9452352476849448,
+      0.9449712791120066
+    ]
+  ],
+  "seed": 2026090407,
+  "sensitivity": 2.8284271247461903,
+  "status": "QUALIFICATION_ONLY_NOT_PRIMARY"
+}

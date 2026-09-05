@@ -1,0 +1,30 @@
+{
+  "manifest_version": 1,
+  "dataset_id": "T3",
+  "phase": "P05",
+  "generator_id": "t3-logit-v1.1",
+  "source_T2_roles_sha256": "77378feff7cd6b20d83eb9a2d44850779399f877b07185485550fbf96b63cd09",
+  "units": 7813401,
+  "users": 6142256,
+  "campaigns": 675,
+  "segments": 8,
+  "regimes": ["R0", "R1", "R2", "R3", "R4", "R5", "R6", "R7"],
+  "structure": {
+    "path": "data/validated/t3_structure.parquet",
+    "bytes": 94035377,
+    "sha256": "9094a79407a8f3d717701c83e9fc14ca776691b846da23307115a460f60e3a9f"
+  },
+  "candidate_observations": {
+    "path": "data/validated/t3_observations.parquet",
+    "bytes": 95790515,
+    "sha256": "9e2d34f5760512a97bf5bb1bf195ce340266c3a8eb26e2d9f4b1d92867bf717b",
+    "truth_columns": []
+  },
+  "sealed_truth": {
+    "individual_sha256": "3de592129bace8befa5537172f23f98d6de309efacc1e488ad8a588fbc32044a",
+    "campaign_sha256": "130ee59813d29d93edb1938ffc5d2287a7c217a1bdb8378c45785fcfabb2caf3",
+    "segment_sha256": "6fcd808d7eb895c579ca26b8dd7b4ea4af486124aacb0636e55bc6e2e2e98233",
+    "campaign_segment_sha256": "cff782270843a4d8fef2a75ed7f27752164686d96f1f5c8a8076379ffaf806f2"
+  },
+  "access_rule": "Candidate code may access observations only; scoring may open truth only after candidate outputs are frozen."
+}

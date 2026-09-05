@@ -1,0 +1,29 @@
+spec_version: "2.2"
+created_in_phase: P04
+roles:
+  - train
+  - validation
+  - calibration
+  - policy
+  - qualification
+  - locked_final
+t1:
+  unit: immutable_row_id
+  algorithm: "md5_number_lower(salt || ':' || row_id) modulo 10000"
+  salt: prism-ads-v2.2-t1-role-salt-20260904
+  cumulative_thresholds:
+    train: 5000
+    validation: 6500
+    calibration: 7500
+    policy: 8500
+    qualification: 9000
+    locked_final: 10000
+t2:
+  unit: uid
+  ordering_value: "max(event timestamp, nonnegative conversion timestamp) per uid"
+  quantiles: [0.50, 0.65, 0.75, 0.85, 0.90]
+  cutpoints: [1690238, 2052600, 2286655, 2466052, 2556136]
+  conversion_path_key: [uid, conversion_id]
+  user_disjoint: true
+  embargo: null
+  embargo_rationale: "User-disjoint assignment prevents cross-role paths; complete user histories make event-time ranges overlap."

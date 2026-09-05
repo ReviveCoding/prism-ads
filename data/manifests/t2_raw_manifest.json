@@ -1,0 +1,43 @@
+{
+  "acquisition": {
+    "bytes": 653128946,
+    "content_range": null,
+    "content_type": "application/zip",
+    "etag": "0x8D7DBC264B76EF4",
+    "http_status": 200,
+    "last_modified": "Wed, 08 Apr 2020 13:40:25 GMT",
+    "path": "C:\\Users\\bjw-0\\Downloads\\prism-ads\\data\\raw\\criteo_attribution_dataset.zip",
+    "resolved_url": "https://criteostorage.blob.core.windows.net/criteo-research-datasets/criteo_attribution_dataset.zip",
+    "retrieval_status": "existing_file_verified",
+    "retrieved_at": "2026-09-04T19:28:18.412293Z",
+    "sha256": "242acae50d9eadda739da1dab7c5fec6f4aee3e4e17b315e2c42c2d42f339d09"
+  },
+  "dataset": {
+    "archive_type": "zip",
+    "dataset_id": "T2",
+    "expected_content_types": [
+      "application/zip",
+      "application/octet-stream"
+    ],
+    "filename": "criteo_attribution_dataset.zip",
+    "official_link": "http://go.criteo.net/criteo-research-attribution-dataset.zip",
+    "official_page": "https://ailab.criteo.com/criteo-attribution-modeling-bidding-dataset/",
+    "title": "Criteo Attribution Modeling for Bidding Dataset"
+  },
+  "logical_immutability": "read_only_after_validation",
+  "manifest_version": 1,
+  "validation": {
+    "archive_integrity": "PASS",
+    "archive_type": "zip",
+    "members": [
+      "Experiments.ipynb",
+      "README.md",
+      "criteo_attribution_dataset.tsv.gz"
+    ],
+    "nested_gzip_integrity": "PASS",
+    "nested_gzip_uncompressed_bytes": {
+      "criteo_attribution_dataset.tsv.gz": 2589891984
+    },
+    "uncompressed_bytes": 653044504
+  }
+}

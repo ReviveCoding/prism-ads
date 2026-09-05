@@ -1,0 +1,50 @@
+{
+  "T3_decision_regret": {
+    "fixed_50": {
+      "selected_campaigns": 50,
+      "true_decision_regret": 444.3406819332331
+    },
+    "top_10_percent": {
+      "selected_campaigns": 68,
+      "true_decision_regret": 545.3854665578756
+    },
+    "top_25_percent": {
+      "selected_campaigns": 169,
+      "true_decision_regret": 865.1062188920614
+    }
+  },
+  "attribution": {
+    "claim_boundary": "attribution credit is not causal incrementality",
+    "credit_rows": 251,
+    "markov_top_campaigns_plus_other": 21,
+    "methods": [
+      "A0",
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "output_sha256": "1d607cca9b8e214f8caad63805c35567ba2343120de494679aee9cc3f7e401de",
+    "reference_decision_deviation": {
+      "A1_first_click": 0.0,
+      "A2_linear": 0.0,
+      "A3_time_decay": 0.0,
+      "A4_position_based": 0.0
+    },
+    "sample_conversion_paths": 62,
+    "sample_paths": 2033
+  },
+  "created_at": "2026-09-04T20:37:25.377040Z",
+  "paths": {
+    "bytes": 220143577,
+    "chronology_failures": 0,
+    "conversion_paths": 438730,
+    "path": "data/marts/t2_paths.parquet",
+    "path_role_leakage": 0,
+    "rows": 13236110,
+    "sha256": "f74fe56e52a9a04973325d9ae2776b66d8a8af2899b026e00df92406beb011b8"
+  },
+  "phase": "P09",
+  "status": "PASS"
+}

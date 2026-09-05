@@ -1,0 +1,41 @@
+{
+  "phase": "P00",
+  "qualified_at": "2026-09-04T19:17:29.961Z",
+  "status": "PASS",
+  "python": {
+    "selector": "py -3.12",
+    "version": "3.12.10",
+    "venv": ".venv",
+    "pip_version": "25.0.1"
+  },
+  "https": {
+    "transport": "Python urllib",
+    "probe_url": "https://ailab.criteo.com/",
+    "http_status": 200,
+    "openssl": "OpenSSL 3.0.16 11 Feb 2025",
+    "result": "PASS"
+  },
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13900HX",
+    "logical_processors": 32,
+    "ram_bytes": 34086969344,
+    "disk_free_bytes_at_probe": 173560283136,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "gpu_vram_mib": 16376,
+    "nvidia_driver": "610.62"
+  },
+  "gpu_qualification": {
+    "device_visibility": "PASS",
+    "synchronized_compute_operation": "DEFERRED_UNTIL_GPU_FRAMEWORK_QUALIFICATION",
+    "gpu_backed_execution_claimed": false
+  },
+  "source_control": {
+    "git_repository": true,
+    "head": null,
+    "note": "Repository has no commit identity yet."
+  },
+  "limitations": [
+    "CIM inventory was blocked by host permissions; equivalent read-only platform and Win32 memory APIs were used.",
+    "No scientific GPU framework is installed at P00, so no GPU-backed computation is claimed."
+  ]
+}

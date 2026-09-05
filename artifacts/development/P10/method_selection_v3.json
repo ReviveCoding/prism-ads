@@ -1,0 +1,507 @@
+{
+  "ablation_order": {
+    "C0": "B3",
+    "C1": "+campaign response hierarchy",
+    "C2": "+segment response hierarchy",
+    "C3": "+explicit numerator/denominator privacy likelihood",
+    "C4": "+treatment-effect hierarchy (full PRISM-HB)"
+  },
+  "baseline_selection": {
+    "eligible": [
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "metric_values": {
+      "B1": 0.1084694656201221,
+      "B2": 0.1084694656201221,
+      "B3": 0.0033498603247053733
+    },
+    "prespecified_metric": "mean population-weighted RMSE across the full epsilon feasibility grid",
+    "selected": "B3"
+  },
+  "candidate_tuning": {
+    "basis": "development falsification response to preserved v1 interval overconfidence; no locked or qualification outcomes used",
+    "effect_scale_prior": 0.05,
+    "f3_definition": "group base rates fixed from R0, zero treatment effect and zero sampling variation, then DP noise added; tests privacy-noise-only discoveries",
+    "negative_evidence": [
+      "artifacts/development/P10/method_selection.json",
+      "artifacts/development/P10/method_selection_v2.json"
+    ]
+  },
+  "created_at": "2026-09-04T21:11:00.493832Z",
+  "development_role": "method_validation",
+  "effect_regime": "R2",
+  "falsification": {
+    "F0_known_null_R0": {
+      "interval_false_discovery_rate": 0.015322347499277248,
+      "limits": {
+        "absolute_weighted_mean": 0.01,
+        "false_discovery_rate": 0.1
+      },
+      "status": "PASS",
+      "weighted_mean_effect": -0.0006451323177801481
+    },
+    "F1_treatment_permutation": {
+      "interval_false_discovery_rate": 0.0037604859704946487,
+      "limits": {
+        "absolute_weighted_mean": 0.01,
+        "false_discovery_rate": 0.1
+      },
+      "status": "PASS",
+      "weighted_mean_effect": -0.0011417659114797989
+    },
+    "F2_negative_control": {
+      "interval_false_discovery_rate": 0.006071118820468344,
+      "limits": {
+        "absolute_weighted_mean": 0.01,
+        "false_discovery_rate": 0.1
+      },
+      "status": "PASS",
+      "weighted_mean_effect": -0.0003752376932478669
+    },
+    "F3_privacy_noise_only": {
+      "interval_false_discovery_rate": 0.0008673026886383347,
+      "limits": {
+        "absolute_weighted_mean": 0.01,
+        "false_discovery_rate": 0.1
+      },
+      "status": "PASS",
+      "weighted_mean_effect": -8.792870436017297e-05
+    }
+  },
+  "gpu_runs": [
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 0.25,
+      "final_loss": 9409.094528019428,
+      "finite_loss": true,
+      "initial_loss": 67755.71634276956,
+      "model": "C4",
+      "posterior_draws": 160,
+      "purpose": "epsilon_feasibility",
+      "runtime_seconds": 46.550967500021216,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 0.5,
+      "final_loss": 4637.09684830904,
+      "finite_loss": true,
+      "initial_loss": 126298.15228372626,
+      "model": "C4",
+      "posterior_draws": 160,
+      "purpose": "epsilon_feasibility",
+      "runtime_seconds": 38.21866829995997,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 472.2372235953808,
+      "finite_loss": true,
+      "initial_loss": 222379.86474582553,
+      "model": "C4",
+      "posterior_draws": 160,
+      "purpose": "epsilon_feasibility",
+      "runtime_seconds": 40.762759100005496,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 2.0,
+      "final_loss": -3591.4180965274572,
+      "finite_loss": true,
+      "initial_loss": 364331.4239001996,
+      "model": "C4",
+      "posterior_draws": 160,
+      "purpose": "epsilon_feasibility",
+      "runtime_seconds": 38.33692840003641,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 4.0,
+      "final_loss": -6517.352978810668,
+      "finite_loss": true,
+      "initial_loss": 423445.21268891543,
+      "model": "C4",
+      "posterior_draws": 160,
+      "purpose": "epsilon_feasibility",
+      "runtime_seconds": 43.23273000004701,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 8.0,
+      "final_loss": -9212.17264173925,
+      "finite_loss": true,
+      "initial_loss": 384350.2958819829,
+      "model": "C4",
+      "posterior_draws": 160,
+      "purpose": "epsilon_feasibility",
+      "runtime_seconds": 41.61913100001402,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 245021.50562551618,
+      "finite_loss": true,
+      "initial_loss": 693185.6782382131,
+      "model": "C1",
+      "posterior_draws": 160,
+      "purpose": "ablation",
+      "runtime_seconds": 18.724777399969753,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 244456.81891915202,
+      "finite_loss": true,
+      "initial_loss": 699374.5284308959,
+      "model": "C2",
+      "posterior_draws": 160,
+      "purpose": "ablation",
+      "runtime_seconds": 25.65699529997073,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 452.27491953969,
+      "finite_loss": true,
+      "initial_loss": 222306.24747421406,
+      "model": "C3",
+      "posterior_draws": 160,
+      "purpose": "ablation",
+      "runtime_seconds": 25.21733699995093,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 303.8646491765976,
+      "finite_loss": true,
+      "initial_loss": 278082.0029457598,
+      "model": "F0_known_null_R0",
+      "posterior_draws": 160,
+      "purpose": "falsification",
+      "runtime_seconds": 38.3714904000517,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 482.8730427529663,
+      "finite_loss": true,
+      "initial_loss": 221949.72052142397,
+      "model": "F1_treatment_permutation",
+      "posterior_draws": 160,
+      "purpose": "falsification",
+      "runtime_seconds": 35.27846519998275,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 168.5332357287407,
+      "finite_loss": true,
+      "initial_loss": 285837.1989000244,
+      "model": "F2_negative_control",
+      "posterior_draws": 160,
+      "purpose": "falsification",
+      "runtime_seconds": 35.38307600002736,
+      "svi_steps": 300
+    },
+    {
+      "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+      "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "epsilon": 1.0,
+      "final_loss": 256.608559936285,
+      "finite_loss": true,
+      "initial_loss": 295989.57380239666,
+      "model": "F3_privacy_noise_only",
+      "posterior_draws": 160,
+      "purpose": "falsification",
+      "runtime_seconds": 34.77954999997746,
+      "svi_steps": 300
+    }
+  ],
+  "phase": "P10",
+  "predictions": {
+    "bytes": 1059534,
+    "path": "artifacts/development/P10/private_predictions_pretruth_v3.parquet",
+    "sha256": "f71b2798f9ebba69636f91ad51e1a4d21e35caeb46998b19d9f1c3be73e0854b",
+    "status": "frozen_before_truth_scoring"
+  },
+  "privacy": {
+    "accounting": {
+      "0.25": {
+        "accountant": "google-dp-accounting PLD",
+        "accountant_version": "0.6.0",
+        "compositions": 1,
+        "delta": 1e-06,
+        "epsilon": 0.24986658839618583,
+        "l2_sensitivity": 2.449489742783178,
+        "neighboring_relation": "user-level add/remove-one",
+        "pessimistic_estimate": true,
+        "standard_deviation": 37.765054071245984
+      },
+      "0.5": {
+        "accountant": "google-dp-accounting PLD",
+        "accountant_version": "0.6.0",
+        "compositions": 1,
+        "delta": 1e-06,
+        "epsilon": 0.4997325854638207,
+        "l2_sensitivity": 2.449489742783178,
+        "neighboring_relation": "user-level add/remove-one",
+        "pessimistic_estimate": true,
+        "standard_deviation": 19.746922346706043
+      },
+      "1.0": {
+        "accountant": "google-dp-accounting PLD",
+        "accountant_version": "0.6.0",
+        "compositions": 1,
+        "delta": 1e-06,
+        "epsilon": 0.9999999999993976,
+        "l2_sensitivity": 2.449489742783178,
+        "neighboring_relation": "user-level add/remove-one",
+        "pessimistic_estimate": true,
+        "standard_deviation": 10.348307605958727
+      },
+      "2.0": {
+        "accountant": "google-dp-accounting PLD",
+        "accountant_version": "0.6.0",
+        "compositions": 1,
+        "delta": 1e-06,
+        "epsilon": 1.9999999999970184,
+        "l2_sensitivity": 2.449489742783178,
+        "neighboring_relation": "user-level add/remove-one",
+        "pessimistic_estimate": true,
+        "standard_deviation": 5.463528747792508
+      },
+      "4.0": {
+        "accountant": "google-dp-accounting PLD",
+        "accountant_version": "0.6.0",
+        "compositions": 1,
+        "delta": 1e-06,
+        "epsilon": 3.997750164139241,
+        "l2_sensitivity": 2.449489742783178,
+        "neighboring_relation": "user-level add/remove-one",
+        "pessimistic_estimate": true,
+        "standard_deviation": 2.9249732928330885
+      },
+      "8.0": {
+        "accountant": "google-dp-accounting PLD",
+        "accountant_version": "0.6.0",
+        "compositions": 1,
+        "delta": 1e-06,
+        "epsilon": 7.995294702416697,
+        "l2_sensitivity": 2.449489742783178,
+        "neighboring_relation": "user-level add/remove-one",
+        "pessimistic_estimate": true,
+        "standard_deviation": 1.6001582059489856
+      }
+    },
+    "delta": 1e-06,
+    "epsilon_grid": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "l2_sensitivity": 2.449489742783178,
+    "matched_release_seed_family": 2026090410,
+    "max_groups_per_user": 3,
+    "neighboring_relation": "user-level add/remove-one",
+    "noise_scales": {
+      "0.25": 37.765054071245984,
+      "0.5": 19.746922346706043,
+      "1.0": 10.348307605958727,
+      "2.0": 5.463528747792508,
+      "4.0": 2.9249732928330885,
+      "8.0": 1.6001582059489856
+    }
+  },
+  "scores": {
+    "B1@0.25": {
+      "bias": -0.003809572987196906,
+      "macro_rmse": 0.4990815818300181,
+      "mae": 0.328785401754513,
+      "weighted_rmse": 0.22190132772920074
+    },
+    "B1@0.5": {
+      "bias": -0.004568327845740552,
+      "macro_rmse": 0.43024712338828747,
+      "mae": 0.2640908667900345,
+      "weighted_rmse": 0.15546913494009382
+    },
+    "B1@1": {
+      "bias": -0.000754013555075609,
+      "macro_rmse": 0.3771612070184844,
+      "mae": 0.21627685228313787,
+      "weighted_rmse": 0.11143377464090015
+    },
+    "B1@2": {
+      "bias": -0.0008656153645231982,
+      "macro_rmse": 0.30232340743019387,
+      "mae": 0.15811954890211086,
+      "weighted_rmse": 0.0731774340459804
+    },
+    "B1@4": {
+      "bias": -0.0007409851634629449,
+      "macro_rmse": 0.25377420497252784,
+      "mae": 0.12183744307149756,
+      "weighted_rmse": 0.05255464030983349
+    },
+    "B1@8": {
+      "bias": -0.0004930721163802385,
+      "macro_rmse": 0.18491051272172485,
+      "mae": 0.0842501224995089,
+      "weighted_rmse": 0.03628048205472396
+    },
+    "B2@0.25": {
+      "bias": -0.003809572987196906,
+      "macro_rmse": 0.4990815818300181,
+      "mae": 0.328785401754513,
+      "weighted_rmse": 0.22190132772920074
+    },
+    "B2@0.5": {
+      "bias": -0.004568327845740552,
+      "macro_rmse": 0.43024712338828747,
+      "mae": 0.2640908667900345,
+      "weighted_rmse": 0.15546913494009382
+    },
+    "B2@1": {
+      "bias": -0.000754013555075609,
+      "macro_rmse": 0.3771612070184844,
+      "mae": 0.21627685228313787,
+      "weighted_rmse": 0.11143377464090015
+    },
+    "B2@2": {
+      "bias": -0.0008656153645231982,
+      "macro_rmse": 0.30232340743019387,
+      "mae": 0.15811954890211086,
+      "weighted_rmse": 0.0731774340459804
+    },
+    "B2@4": {
+      "bias": -0.0007409851634629449,
+      "macro_rmse": 0.25377420497252784,
+      "mae": 0.12183744307149756,
+      "weighted_rmse": 0.05255464030983349
+    },
+    "B2@8": {
+      "bias": -0.0004930721163802385,
+      "macro_rmse": 0.18491051272172485,
+      "mae": 0.0842501224995089,
+      "weighted_rmse": 0.03628048205472396
+    },
+    "B3@0.25": {
+      "bias": -0.0026358236438525913,
+      "macro_rmse": 0.003690830334033603,
+      "mae": 0.0027241011823481978,
+      "weighted_rmse": 0.004043231068484366
+    },
+    "B3@0.5": {
+      "bias": -0.0013055230190506832,
+      "macro_rmse": 0.003155604288656234,
+      "mae": 0.002416672810482501,
+      "weighted_rmse": 0.003332346839643969
+    },
+    "B3@1": {
+      "bias": -0.000329354209783758,
+      "macro_rmse": 0.0030855189379309315,
+      "mae": 0.0024757418689875196,
+      "weighted_rmse": 0.003083604413994221
+    },
+    "B3@2": {
+      "bias": -0.0008842778187574393,
+      "macro_rmse": 0.0030879318559696345,
+      "mae": 0.002413337906699288,
+      "weighted_rmse": 0.003190937484446105
+    },
+    "B3@4": {
+      "bias": -0.0008508555724962568,
+      "macro_rmse": 0.003084962813669492,
+      "mae": 0.0024149537744141475,
+      "weighted_rmse": 0.003181836784890042
+    },
+    "B3@8": {
+      "bias": -0.0011289381930789293,
+      "macro_rmse": 0.0031204994501238515,
+      "mae": 0.0024097145886237325,
+      "weighted_rmse": 0.0032672053567735387
+    },
+    "C1@1": {
+      "bias": -0.006805055795807416,
+      "macro_rmse": 0.0063407903196512185,
+      "mae": 0.005513046021887644,
+      "weighted_rmse": 0.007487960702240061
+    },
+    "C2@1": {
+      "bias": -0.006533824245958735,
+      "macro_rmse": 0.005982332980017029,
+      "mae": 0.0050946871919591305,
+      "weighted_rmse": 0.007247982006025171
+    },
+    "C3@1": {
+      "bias": 0.00035589694526134654,
+      "macro_rmse": 0.0032392388891036837,
+      "mae": 0.002531378997346188,
+      "weighted_rmse": 0.0022094123930554953
+    },
+    "C4@0.25": {
+      "bias": -0.004171333175194022,
+      "macro_rmse": 0.004329044841187024,
+      "mae": 0.0035191825857626975,
+      "weighted_rmse": 0.004828057886605948
+    },
+    "C4@0.5": {
+      "bias": -0.0018748915192646103,
+      "macro_rmse": 0.0029359892012241584,
+      "mae": 0.002223980096191812,
+      "weighted_rmse": 0.0031360264821157324
+    },
+    "C4@1": {
+      "bias": 0.00045357750122890347,
+      "macro_rmse": 0.003852349191420031,
+      "mae": 0.002950080272544341,
+      "weighted_rmse": 0.00338252717547291
+    },
+    "C4@2": {
+      "bias": -0.0017918253594414464,
+      "macro_rmse": 0.003714049514882278,
+      "mae": 0.0029001579926625424,
+      "weighted_rmse": 0.00366694484802109
+    },
+    "C4@4": {
+      "bias": -0.002838757267020817,
+      "macro_rmse": 0.004318252498953981,
+      "mae": 0.003424101953914131,
+      "weighted_rmse": 0.004158872141305393
+    },
+    "C4@8": {
+      "bias": -0.0006752276108454415,
+      "macro_rmse": 0.004194623981286748,
+      "mae": 0.0031396525381830022,
+      "weighted_rmse": 0.003790763484510044
+    }
+  },
+  "status": "PASS"
+}

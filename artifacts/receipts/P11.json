@@ -1,0 +1,35 @@
+{
+  "phase": "P11",
+  "status": "PASS",
+  "completed_at": "2026-09-04T21:22:03.709Z",
+  "outputs": [
+    "artifacts/qualification/P11/qualification_predictions_pretruth.parquet",
+    "artifacts/qualification/P11/qualification_summary.json",
+    "artifacts/qualification/P11/privacy_release.json",
+    "artifacts/qualification/P11/privacy_accounting.json",
+    "artifacts/qualification/P11/qualification_policy.json",
+    "reports/COMPUTE_BUDGET_DECISION.md"
+  ],
+  "gates": {
+    "representative_end_to_end": "PASS",
+    "privacy_accounting": "PASS",
+    "predictions_frozen_before_truth": "PASS",
+    "three_seed_stability": "PASS",
+    "objective_convergence": "PASS",
+    "interval_coverage": "PASS",
+    "long_tail_guardrail": "PASS",
+    "decision_regret_guardrail": "PASS",
+    "compute_budget": "PASS",
+    "tests": "29 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "qualification_primary": {
+    "B3_weighted_rmse": 0.0036669608169582098,
+    "PRISM_weighted_rmse": 0.003276242570024872,
+    "relative_improvement": 0.106551799989535,
+    "PRISM_macro_rmse": 0.004061911647055168,
+    "PRISM_interval_coverage": 0.9978580171358629
+  },
+  "next_phase": "P12"
+}

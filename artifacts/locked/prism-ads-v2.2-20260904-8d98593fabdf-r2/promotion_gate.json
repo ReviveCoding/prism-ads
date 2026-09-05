@@ -1,0 +1,21 @@
+{
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "locked_run_id": "locked-r2-20260904-001",
+  "status": "NON_PROMOTABLE",
+  "evidence_integrity": "PASS",
+  "inference_health": "PASS",
+  "primary_materiality": {
+    "status": "PASS",
+    "B3_weighted_rmse": 0.00469783150493247,
+    "PRISM_weighted_rmse": 0.00432812168438213,
+    "relative_improvement": 0.07869797376984787,
+    "required_relative_improvement": 0.05,
+    "paired_difference_lower_95": 0.00012268699818416306,
+    "paired_difference_upper_95": 0.0006633065718951088
+  },
+  "guardrails": {
+    "macro_rmse": {"status": "PASS", "B3": 0.0052465459656878335, "PRISM": 0.00493981977081282},
+    "interval_coverage": {"status": "FAIL", "observed": 0.7063662790697673, "required_minimum": 0.80}
+  },
+  "verdict_reason": "The frozen interval-coverage guardrail failed. Post-lock tuning is prohibited; RMSE materiality does not override a guardrail failure."
+}

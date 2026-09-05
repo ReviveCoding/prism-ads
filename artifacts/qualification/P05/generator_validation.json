@@ -1,0 +1,66 @@
+{
+  "artifacts": {
+    "campaign_segment_truth": {
+      "bytes": 288172,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_campaign_segment_truth.parquet",
+      "sha256": "cff782270843a4d8fef2a75ed7f27752164686d96f1f5c8a8076379ffaf806f2"
+    },
+    "campaign_truth": {
+      "bytes": 54779,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_campaign_truth.parquet",
+      "sha256": "130ee59813d29d93edb1938ffc5d2287a7c217a1bdb8378c45785fcfabb2caf3"
+    },
+    "individual_truth": {
+      "bytes": 640932938,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_individual_truth.parquet",
+      "sha256": "3de592129bace8befa5537172f23f98d6de309efacc1e488ad8a588fbc32044a"
+    },
+    "observations": {
+      "bytes": 95790515,
+      "path": "data/validated/t3_observations.parquet",
+      "sha256": "9e2d34f5760512a97bf5bb1bf195ce340266c3a8eb26e2d9f4b1d92867bf717b"
+    },
+    "segment_truth": {
+      "bytes": 1458,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_segment_truth.parquet",
+      "sha256": "6fcd808d7eb895c579ca26b8dd7b4ea4af486124aacb0636e55bc6e2e2e98233"
+    },
+    "structure": {
+      "bytes": 94035377,
+      "path": "data/validated/t3_structure.parquet",
+      "sha256": "9094a79407a8f3d717701c83e9fc14ca776691b846da23307115a460f60e3a9f"
+    }
+  },
+  "campaigns": 675,
+  "created_at": "2026-09-04T19:56:33.932838Z",
+  "generator_id": "t3-logit-v1.1",
+  "null_max_absolute_ite": 0.0,
+  "phase": "P05",
+  "probability_max": 0.6297015626215872,
+  "probability_min": 0.0014927393733213876,
+  "regimes": [
+    "R0",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "role_counts": {
+    "calibration": 834488,
+    "generator_development": 1396124,
+    "locked_final": 958490,
+    "method_development": 2093410,
+    "method_validation": 1198849,
+    "policy": 876221,
+    "qualification": 455819
+  },
+  "segments": 8,
+  "status": "PASS",
+  "treatment_rate": 0.49978991222900243,
+  "truth_access": "sealed; candidate code may read observations only; scoring after output freeze",
+  "units": 7813401,
+  "users": 6142256
+}

@@ -1,0 +1,20 @@
+{
+  "record_type": "post_release_non_scientific_hardening",
+  "scientific_result_immutable": true,
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "locked_run_id": "locked-r2-20260904-001",
+  "final_scientific_decision": "RETAIN_BASELINE",
+  "initial_publication_commit": "b751e671cf35607aa43acbb6a45cdb1557e5dfd2",
+  "original_coverage_percent": 55,
+  "final_coverage_percent": 90,
+  "tests_passed": 69,
+  "ruff": "PASS",
+  "mypy_strict": "PASS",
+  "publication_scan": "PASS",
+  "active_freeze_verification": "PASS_23_OF_23",
+  "controller_verification": "PASS_94_OF_94",
+  "publication_blockers": [
+    "Confirm public exposure of the configured Git author email.",
+    "Perform a live cross-browser dashboard check."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "phase": "P02",
+  "validated_at": "2026-09-04T19:29:47.540Z",
+  "status": "PASS",
+  "transport": "Python 3.12 urllib HTTPS after official Criteo redirect resolution",
+  "datasets": {
+    "T1": {
+      "bytes": 311422618,
+      "sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+      "archive_integrity": "PASS",
+      "uncompressed_bytes": 3248115221,
+      "manifest": "data/manifests/t1_raw_manifest.json",
+      "manifest_sha256": "1eebd1882a3aea1612051361f7b1675a389e48c9a5f3a603b0ee475f76a76ba4"
+    },
+    "T2": {
+      "bytes": 653128946,
+      "sha256": "242acae50d9eadda739da1dab7c5fec6f4aee3e4e17b315e2c42c2d42f339d09",
+      "zip_integrity": "PASS",
+      "nested_gzip_integrity": "PASS",
+      "nested_tsv_uncompressed_bytes": 2589891984,
+      "manifest": "data/manifests/t2_raw_manifest.json",
+      "manifest_sha256": "b8e8af2c660ded25b7df4152ddfcb1321781358b9eb28eee5d4b2107897216b7"
+    }
+  },
+  "raw_files_read_only": true,
+  "raw_files_git_ignored": true,
+  "raw_files_git_tracked": false
+}

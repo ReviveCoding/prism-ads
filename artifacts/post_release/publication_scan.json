@@ -1,0 +1,34 @@
+{
+  "binary_files": [],
+  "candidate_file_count": 250,
+  "high_entropy_candidates": [],
+  "large_files_over_1MiB": [],
+  "limitations": [
+    "Heuristic scanning cannot prove the absence of every secret.",
+    "Entropy matches require manual review and can include scientific identifiers.",
+    "Git history and hosting-platform scanners should be reviewed before publication."
+  ],
+  "personal_absolute_paths": [
+    {
+      "line": 15,
+      "path": "PRISM_ADS_MASTER_PROMPT_V2.md"
+    },
+    {
+      "line": 9,
+      "path": "data/manifests/t1_raw_manifest.json"
+    },
+    {
+      "line": 9,
+      "path": "data/manifests/t2_raw_manifest.json"
+    },
+    {
+      "line": 15,
+      "path": "docs/MASTER_SPEC_V2.md"
+    }
+  ],
+  "raw_or_derived_data_candidates": [],
+  "regex_secret_hits": [],
+  "scanner": "project-local regex, filename, entropy, path, binary, and size audit",
+  "sensitive_filenames": [],
+  "status": "PASS"
+}

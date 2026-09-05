@@ -1,0 +1,14 @@
+{
+  "phase": "P11",
+  "status": "PASS",
+  "accountant": "google-dp-accounting PLD",
+  "accountant_version": "0.6.0",
+  "pessimistic_estimate": true,
+  "neighboring_relation": "user-level add/remove-one",
+  "declared_epsilon": 1.0,
+  "accounted_epsilon": 0.9999999999998815,
+  "delta": 1e-7,
+  "l2_sensitivity": 2.449489742783178,
+  "noise_standard_deviation": 11.46033717766397,
+  "compositions": 1
+}

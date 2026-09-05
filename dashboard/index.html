@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PRISM-Ads | Locked advertising-measurement research readout</title>
+  <style>
+    :root{color-scheme:dark;--bg:#08101d;--surface:#111c2e;--strong:#172640;--line:#31415d;--text:#f4f7ff;--muted:#b7c4da;--blue:#86b7ff;--gold:#ffd88a;--fail:#ff9ca5;--pass:#8ee0b2;--shadow:0 18px 50px rgb(0 0 0/22%)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#132b4d 0,var(--bg) 34rem);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1180px;margin:auto;padding:36px 24px 72px}h1,h2,h3,p{margin-top:0}h1{margin-bottom:4px;font-size:clamp(2.4rem,7vw,5rem);line-height:1;letter-spacing:-.05em}h2{margin-bottom:18px;font-size:clamp(1.55rem,4vw,2.2rem);line-height:1.15}h3{margin-bottom:8px;font-size:1.05rem}section{margin-top:64px}a{color:var(--blue);text-underline-offset:3px}a:hover{color:#c8dcff}a:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:3px}.eyebrow{color:var(--blue);font-weight:750;letter-spacing:.11em;text-transform:uppercase}.subtitle{max-width:760px;color:var(--muted);font-size:clamp(1.05rem,2vw,1.3rem)}.freeze{overflow-wrap:anywhere;color:var(--muted);font-size:.82rem}.context-strip,.kpi-grid,.insight-grid,.evidence-grid,.track-grid,.footer-links{display:grid;gap:14px}.context-strip{grid-template-columns:repeat(5,minmax(0,1fr));margin-top:28px}.context-item{padding:12px 14px;border:1px solid var(--line);border-radius:9px;background:rgb(17 28 46/72%)}.context-item strong{display:block;font-size:.96rem}
+    .decision{position:relative;overflow:hidden;padding:clamp(24px,5vw,52px);border:1px solid #52698f;border-radius:20px;background:linear-gradient(135deg,#19365e,var(--surface) 68%);box-shadow:var(--shadow)}.decision::after{content:"";position:absolute;inset:0 0 0 auto;width:7px;background:var(--fail)}.decision-code{margin:4px 0 14px;font:750 clamp(1.35rem,4vw,2.6rem)/1.1 ui-monospace,monospace;overflow-wrap:anywhere}.decision h2{margin:0 0 10px;font-size:clamp(1.65rem,4vw,2.8rem)}.decision-copy{max-width:850px;font-size:1.12rem}.caveat{max-width:900px;margin:22px 0 0;padding:16px 18px;border-left:4px solid var(--fail);background:rgb(8 16 29/55%)}
+    .kpi-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.card{padding:20px;border:1px solid var(--line);border-radius:13px;background:var(--surface)}.kpi{min-height:198px}.kpi-label{color:var(--muted);font-size:.82rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.kpi-value{margin:7px 0 5px;font-size:clamp(1.42rem,3vw,2rem);font-weight:800;line-height:1.15}.kpi-comparison{color:var(--blue);font-weight:700}.status-fail{color:var(--fail);font-weight:800}.status-pass{color:var(--pass);font-weight:800}.uncertainty-note{margin-top:16px;padding:18px 20px;border:1px solid #285a9f;border-radius:12px;background:#0d223e}.uncertainty-note strong{display:block;font-size:1.1rem}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:13px}table{width:100%;min-width:790px;border-collapse:collapse;background:var(--surface)}caption{padding:14px 16px;color:var(--muted);text-align:left}th,td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}th:first-child,td:first-child{text-align:left}thead{background:var(--strong)}tbody tr:last-child td{border-bottom:0}
+    .insight-grid{grid-template-columns:repeat(6,minmax(0,1fr));counter-reset:insight}.insight{grid-column:span 2;counter-increment:insight}.insight:nth-child(n+4){grid-column:span 3}.insight::before{content:counter(insight,decimal-leading-zero);display:block;margin-bottom:16px;color:var(--gold);font-weight:800}.insight p{margin-bottom:0;color:var(--muted)}.evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.figure-card{display:flex;flex-direction:column;gap:12px}.figure-card:last-child{grid-column:1/-1}.question{margin-bottom:0;color:var(--muted);font-style:italic}figure{margin:0}figure img{display:block;width:100%;height:auto;border-radius:8px;background:#fff}figcaption{margin-top:12px}.takeaway{margin-bottom:0;padding-top:12px;border-top:1px solid var(--line)}.business-implication{margin:18px 0 0;padding:16px 18px;border-left:3px solid var(--blue);border-radius:6px;background:#122139}
+    .recommendation{padding:clamp(24px,5vw,44px);border:1px solid #76535d;border-radius:18px;background:linear-gradient(145deg,#321d2c,var(--surface))}.recommendation h2{font-size:clamp(1.8rem,4vw,2.7rem)}.recommendation ul{padding-left:1.3rem}.next-question{margin:24px 0 0;padding-top:20px;border-top:1px solid #76535d}.track-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.methods-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.method-chip{padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.88rem}.scope{padding:22px;border:1px solid var(--line);border-radius:13px;background:#0d1626}.scope ul{margin-bottom:0}footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--line)}.footer-links{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-links a{padding:11px 0}.muted{color:var(--muted)}
+    @media(max-width:900px){.context-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-grid,.insight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.insight,.insight:nth-child(n+4){grid-column:span 1}.track-grid{grid-template-columns:1fr}}@media(max-width:620px){main{padding:26px 14px 54px}section{margin-top:46px}.context-strip,.kpi-grid,.insight-grid,.evidence-grid,.footer-links{grid-template-columns:1fr}.figure-card:last-child{grid-column:auto}.decision{padding-right:28px}.kpi{min-height:0}}
+  </style>
+</head>
+<body>
+<main>
+  <header aria-labelledby="page-title">
+    <p class="eyebrow">Privacy-Preserving Advertising Measurement</p>
+    <h1 id="page-title">PRISM-Ads</h1>
+    <p class="subtitle">A governed research benchmark for causal incrementality, privacy,
+      attribution, and advertising decision quality.</p>
+    <div class="context-strip" aria-label="Research context">
+      <div class="context-item"><strong>30.4M</strong>source rows across two public Criteo datasets</div>
+      <div class="context-item"><strong>User-level</strong>Gaussian DP</div>
+      <div class="context-item"><strong>epsilon = 1</strong>privacy budget</div>
+      <div class="context-item"><strong>delta = 1e-7</strong>approximate-DP parameter</div>
+      <div class="context-item"><strong>Locked</strong>research benchmark</div>
+    </div>
+    <p class="freeze">Active freeze: prism-ads-v2.2-20260904-8d98593fabdf-r2</p>
+  </header>
+
+  <section class="decision" aria-labelledby="decision-title">
+    <p class="eyebrow">Locked decision</p>
+    <p class="decision-code">RETAIN_BASELINE</p>
+    <h2 id="decision-title">Retain B3 point-estimation baseline</h2>
+    <p class="decision-copy">PRISM improved point accuracy and downstream allocation decisions,
+      but failed the preregistered uncertainty-calibration gate and was therefore not promoted.</p>
+    <p class="caveat"><strong>Uncertainty caveat:</strong> Neither model's current interval
+      estimates are endorsed for high-stakes uncertainty decisions. B3 nominal-95% coverage was
+      0.19%; PRISM reached 70.6%, but the frozen PRISM minimum was 80%.</p>
+  </section>
+
+  <section aria-labelledby="performance-title">
+    <p class="eyebrow">Primary performance</p>
+    <h2 id="performance-title">Better estimates and decisions, with calibration still binding</h2>
+    <div class="kpi-grid">
+      <article class="card kpi"><p class="kpi-label">Point accuracy</p><p class="kpi-value">RMSE ↓ 7.87%</p><p class="kpi-comparison">0.004698 → 0.004328</p><p>B3 → PRISM</p><p class="muted">Primary locked weighted campaign-segment RMSE.</p></article>
+      <article class="card kpi"><p class="kpi-label">Decision quality</p><p class="kpi-value">Top-10% regret</p><p class="kpi-comparison">1.89% → 0.71%</p><p>Top-25%: 1.05% → 0.65%</p><p class="muted">Locked T3 known-truth allocation simulation.</p></article>
+      <article class="card kpi"><p class="kpi-label">Uncertainty calibration</p><p class="kpi-value">70.6% empirical coverage</p><p>Target: ≥80%</p><p class="status-fail">FAIL — blocks promotion</p><p class="muted">Nominal 95% PRISM intervals.</p></article>
+      <article class="card kpi"><p class="kpi-label">Long-tail point accuracy</p><p class="kpi-value">Bottom-decile RMSE ↓ 10.74%</p><p class="kpi-comparison">0.005359 → 0.004783</p></article>
+    </div>
+    <aside class="uncertainty-note" aria-label="Paired RMSE improvement interval">
+      <strong>Paired 95% bootstrap interval for absolute RMSE improvement: 0.000123 to 0.000663</strong>
+      <span class="muted">1,000 campaign-cluster bootstraps with matched locked comparison. This is an interval for paired RMSE improvement, not the Bayesian interval-coverage metric.</span>
+    </aside>
+  </section>
+
+  <section aria-labelledby="scorecard-title">
+    <p class="eyebrow">Locked scorecard</p><h2 id="scorecard-title">Locked primary endpoint and promotion guardrails</h2>
+    <div class="table-wrap" role="region" aria-label="Scrollable locked scorecard" tabindex="0">
+      <table><caption>B3 empirical Bayes versus PRISM-HB on the locked benchmark.</caption>
+        <thead><tr><th scope="col">Metric</th><th scope="col">B3</th><th scope="col">PRISM</th><th scope="col">PRISM change</th><th scope="col">Promotion gate</th></tr></thead>
+        <tbody>
+          <tr><td>Weighted RMSE</td><td>0.004698</td><td>0.004328</td><td>−7.87%</td><td class="status-pass">PASS</td></tr>
+          <tr><td>Macro RMSE</td><td>0.005285</td><td>0.004978</td><td>−5.82%</td><td class="status-pass">PASS</td></tr>
+          <tr><td>Bottom-decile weighted RMSE</td><td>0.005359</td><td>0.004783</td><td>−10.74%</td><td class="status-pass">PASS</td></tr>
+          <tr><td>Top-10% normalized regret</td><td>1.89%</td><td>0.71%</td><td>−1.18 pp</td><td class="status-pass">PASS</td></tr>
+          <tr><td>Top-25% normalized regret</td><td>1.05%</td><td>0.65%</td><td>−0.40 pp</td><td class="status-pass">PASS</td></tr>
+          <tr><td>Nominal 95% interval coverage</td><td>0.19%</td><td>70.6%</td><td>+70.4 pp</td><td class="status-fail">FAIL: PRISM &lt; 80%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="learned-title">
+    <p class="eyebrow">Research synthesis</p><h2 id="learned-title">What we learned</h2>
+    <div class="insight-grid">
+      <article class="card insight"><h3>Privacy modeling improved point estimation</h3><p>PRISM reduced locked weighted RMSE by 7.87%.</p></article>
+      <article class="card insight"><h3>Accuracy did not imply calibrated uncertainty</h3><p>Nominal-95% PRISM intervals covered truth 70.6% of the time.</p></article>
+      <article class="card insight"><h3>Better estimates improved simulated allocation decisions</h3><p>Top-10% normalized regret fell from 1.89% to 0.71% in the locked T3 decision simulation.</p></article>
+      <article class="card insight"><h3>Privacy effects were heterogeneous</h3><p>Suppression disproportionately affected small groups. This is availability and measurement-coverage loss, not universal point-error degradation.</p></article>
+      <article class="card insight"><h3>Private attribution rankings were substantially less stable</h3><p>At epsilon=1, private attribution rank stability was weak. Descriptive attribution should not be the sole budget-allocation signal.</p></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="evidence-title">
+    <p class="eyebrow">Privacy / attribution / long-tail evidence</p><h2 id="evidence-title">Five views supporting the decision</h2>
+    <div class="evidence-grid">
+      <article class="card figure-card"><h3>Privacy–utility frontier</h3><p class="question">Where did explicit privacy modeling improve point error?</p><figure><a href="../reports/figures/privacy_epsilon_weighted_rmse.svg"><img loading="lazy" src="../reports/figures/privacy_epsilon_weighted_rmse.svg" alt="Weighted RMSE across privacy epsilon values for B3 and PRISM in eight effect regimes"></a><figcaption>Weighted RMSE across the registered privacy-by-regime grid.</figcaption></figure><p class="takeaway"><strong>Takeaway:</strong> PRISM improvements were more common in heterogeneous-effect settings and were not uniform across all epsilon/regime cells.</p><a href="../reports/FIGURE_INDEX.md">View the full figure index and derivation notes</a></article>
+      <article class="card figure-card"><h3>Uncertainty calibration</h3><p class="question">Did better point estimation yield calibrated intervals?</p><figure><a href="../reports/figures/privacy_epsilon_interval_coverage.svg"><img loading="lazy" src="../reports/figures/privacy_epsilon_interval_coverage.svg" alt="Empirical nominal 95 percent interval coverage across privacy epsilon values for B3 and PRISM"></a><figcaption>Empirical coverage of nominal-95% intervals.</figcaption></figure><p class="takeaway"><strong>Takeaway:</strong> Point-estimation gains did not solve interval calibration; uncertainty remained the binding release constraint.</p><a href="../reports/FIGURE_INDEX.md">View the full figure index and derivation notes</a></article>
+      <article class="card figure-card"><h3>Threshold suppression</h3><p class="question">How did higher release thresholds change measurement availability?</p><figure><a href="../reports/figures/privacy_k_suppression.svg"><img loading="lazy" src="../reports/figures/privacy_k_suppression.svg" alt="Released group count and unit share as threshold k increases from 10 to 100"></a><figcaption>Availability effects under the descriptive ADH-inspired threshold study.</figcaption></figure><p class="takeaway"><strong>Takeaway:</strong> Increasing k from 10 to 100 reduced released groups from 3,055 to 1,498 while released unit share fell from 99.77% to 92.67%, showing disproportionate small-group suppression.</p><a href="../reports/FIGURE_INDEX.md">View the full figure index and derivation notes</a></article>
+      <article class="card figure-card"><h3>Attribution stability</h3><p class="question">Were private campaign-credit rankings stable enough for allocation?</p><figure><a href="../reports/figures/attribution_rank_stability.svg"><img loading="lazy" src="../reports/figures/attribution_rank_stability.svg" alt="Descriptive Spearman and Kendall private attribution rank stability for methods A0 through A5"></a><figcaption>Descriptive private attribution rank agreement; attribution is not incrementality.</figcaption></figure><p class="takeaway"><strong>Takeaway:</strong> At epsilon=1, A0–A4 private attribution Spearman correlations were roughly 0.10–0.19, indicating unstable campaign-credit rankings.</p><a href="../reports/FIGURE_INDEX.md">View the full figure index and derivation notes</a></article>
+      <article class="card figure-card"><h3>Long-tail point accuracy</h3><p class="question">Did small-group suppression risk erase the locked point-error gain?</p><figure><a href="../reports/figures/long_tail_rmse_by_size.svg"><img loading="lazy" src="../reports/figures/long_tail_rmse_by_size.svg" alt="Weighted RMSE by campaign-size decile for B3 and PRISM"></a><figcaption>Locked point error across the campaign-size distribution.</figcaption></figure><p class="takeaway"><strong>Takeaway:</strong> Despite greater suppression risk for small groups, PRISM improved the locked bottom-decile point-error endpoint by 10.74%.</p><a href="../reports/FIGURE_INDEX.md">View the full figure index and derivation notes</a></article>
+    </div>
+    <p class="business-implication"><strong>Business implication:</strong> In this benchmark, privacy-safe causal estimates remained useful for simulated campaign prioritization even when descriptive attribution rankings became unstable, but uncertainty calibration must pass independently before a new measurement model is adopted.</p>
+  </section>
+
+  <section class="recommendation" aria-labelledby="recommendation-title">
+    <p class="eyebrow">Recommendation</p><h2 id="recommendation-title">Do not promote PRISM-HB v2.2.</h2>
+    <ul><li>Retain B3 as the current eligible point-estimation baseline.</li><li>Do not endorse either model's current interval estimates for high-stakes uncertainty decisions.</li><li>Do not use noisy private attribution rankings alone for campaign allocation.</li><li>Use randomized incrementality evidence for causal decisions.</li><li>Run a separately frozen future study focused on posterior calibration.</li></ul>
+    <p class="next-question"><strong>Next scientific question:</strong> Can PRISM retain its point-estimation advantage while achieving calibrated posterior uncertainty?<br><a href="../reports/FUTURE_V23_PLAN.md">Read the unexecuted V2.3 uncertainty-calibration study design</a>.</p>
+  </section>
+
+  <section aria-labelledby="methods-title">
+    <p class="eyebrow">Methods / scope</p><h2 id="methods-title">Three evidence tracks, one governed decision</h2>
+    <div class="track-grid"><article class="card"><h3>T1 — Randomized Incrementality</h3><p>Public randomized Criteo uplift benchmark.</p></article><article class="card"><h3>T2 — Attribution + User-Level Privacy</h3><p>User/campaign multi-touch structures and differential-privacy stress testing.</p></article><article class="card"><h3>T3 — Semi-Synthetic Known-Truth Causal Benchmark</h3><p>Real structural backbone plus randomized semi-synthetic outcomes with sealed truth.</p></article></div>
+    <div class="methods-list" aria-label="Method summary"><span class="method-chip">Contribution-bounded user-level add/remove-one Gaussian DP</span><span class="method-chip">epsilon = 1</span><span class="method-chip">delta = 1e-7</span><span class="method-chip">Strongest eligible baseline: B3</span><span class="method-chip">GPU hierarchical Bayesian candidate</span><span class="method-chip">Frozen experiment governance</span></div>
+  </section>
+
+  <section class="scope" aria-labelledby="scope-title">
+    <h2 id="scope-title">Research benchmark only</h2><ul><li>Attribution credit is not causal incrementality.</li><li>ADH-inspired thresholding is not an Ads Data Hub implementation.</li><li>No Google affiliation is implied.</li><li>No production advertiser-lift claim is made.</li><li>Criteo row-level data is not redistributed.</li></ul>
+  </section>
+
+  <footer aria-labelledby="reproduce-title">
+    <h2 id="reproduce-title">Reproducibility and supporting evidence</h2>
+    <nav class="footer-links" aria-label="Project documentation"><a href="../README.md">Project overview and quickstart</a><a href="../reports/EXECUTIVE_MEMO.md">Executive decision memo</a><a href="../reports/MEASUREMENT_READOUT.md">Advertising measurement readout</a><a href="../reports/TECHNICAL_REPORT.md">Full technical report</a><a href="../reports/FIGURE_INDEX.md">All 15 figures and derivation notes</a><a href="../reports/CLAIM_LEDGER.md">Auditable scientific claim ledger</a><a href="../RUNBOOK.md">Research reproduction runbook</a><a href="../reports/FINAL_STATUS.md">Final locked scientific status</a><a href="../reports/FUTURE_V23_PLAN.md">Unexecuted V2.3 design plan</a></nav>
+    <p class="freeze">Locked run: locked-r2-20260904-001 · Final scientific decision: RETAIN_BASELINE · PRISM-HB: NON_PROMOTABLE</p>
+  </footer>
+</main>
+</body>
+</html>

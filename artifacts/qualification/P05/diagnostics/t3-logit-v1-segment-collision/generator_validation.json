@@ -1,0 +1,65 @@
+{
+  "artifacts": {
+    "campaign_segment_truth": {
+      "bytes": 311893,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_campaign_segment_truth.parquet",
+      "sha256": "fbc31dccfe96f63219e64fe6332d0c620143ff650e9aca6767140ca52831dfbb"
+    },
+    "campaign_truth": {
+      "bytes": 55863,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_campaign_truth.parquet",
+      "sha256": "db7daf2db3133f93e2106bbeee4cd2e8ed125b9837318d568d544aad06525cbd"
+    },
+    "individual_truth": {
+      "bytes": 643759919,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_individual_truth.parquet",
+      "sha256": "a4b3d3ed9d00eae1a4d37b87ef04fa5a2c61bc8badcf6392d7b4db48fb921f76"
+    },
+    "observations": {
+      "bytes": 95426729,
+      "path": "data/validated/t3_observations.parquet",
+      "sha256": "86b2bfb4031af822c7829b4e31fc5597521c7e688ffe17a5c2a2da2df9607944"
+    },
+    "segment_truth": {
+      "bytes": 1322,
+      "path": "artifacts/qualification/P05/sealed_truth/t3_segment_truth.parquet",
+      "sha256": "e097e8375b655bb1f5c5ef28c9cd17f69111378697ea8e326cb46f0e85fa2ab4"
+    },
+    "structure": {
+      "bytes": 93623544,
+      "path": "data/validated/t3_structure.parquet",
+      "sha256": "09548d54cf0d4234f9feb886831d12ed5a8ef545a9312492bbed34a667069491"
+    }
+  },
+  "campaigns": 675,
+  "created_at": "2026-09-04T19:53:10.498953Z",
+  "generator_id": "t3-logit-v1",
+  "null_max_absolute_ite": 0.0,
+  "phase": "P05",
+  "probability_max": 0.6297015626215872,
+  "probability_min": 0.0014927393733213876,
+  "regimes": [
+    "R0",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "role_counts": {
+    "calibration": 834488,
+    "generator_development": 1396124,
+    "locked_final": 958490,
+    "method_development": 2093410,
+    "method_validation": 1198849,
+    "policy": 876221,
+    "qualification": 455819
+  },
+  "status": "PASS",
+  "treatment_rate": 0.49978991222900243,
+  "truth_access": "sealed; candidate code may read observations only; scoring after output freeze",
+  "units": 7813401,
+  "users": 6142256
+}

@@ -1,0 +1,28 @@
+{
+  "phase": "P06",
+  "status": "PASS",
+  "completed_at": "2026-09-04T20:04:41.838Z",
+  "inputs": {
+    "T1_roles_sha256": "14190421e3f8103815ba4e4c4b58d6d194dcde3137cd3ce8e2b273a777499c9c",
+    "T3_observations_sha256": "9e2d34f5760512a97bf5bb1bf195ce340266c3a8eb26e2d9f4b1d92867bf717b"
+  },
+  "outputs": [
+    "artifacts/development/P06/t3_r2_predictions.parquet",
+    "artifacts/development/P06/metrics.json"
+  ],
+  "gates": {
+    "NR0_randomized_difference": "PASS",
+    "NR1_regression_adjusted": "PASS",
+    "NR2_cross_fitted_doubly_robust": "PASS",
+    "B1_private_aggregate_interface": "PASS",
+    "B2_analytical_privacy_variance": "PASS",
+    "B3_empirical_bayes_partial_pooling": "PASS",
+    "prediction_frozen_before_truth_scoring": "PASS",
+    "development_roles_only": "PASS",
+    "tests": "18 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "limitations": "Formal DP accounting and mechanisms are deferred to P07; P06 makes no DP claim.",
+  "next_phase": "P07"
+}

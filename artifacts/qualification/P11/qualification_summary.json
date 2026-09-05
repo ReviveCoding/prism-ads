@@ -1,0 +1,128 @@
+{
+  "baseline_identity": "B3-empirical-bayes-private-aggregate-v1",
+  "candidate_identity": "PRISM-HB-pyro-rate-v2-effect-scale-0.05",
+  "created_at": "2026-09-04T21:19:33.364540Z",
+  "effect_regime": "R2",
+  "gates": {
+    "accounted_epsilon_at_most_declared": true,
+    "all_losses_finite": true,
+    "interval_coverage_at_least_0_80": true,
+    "objective_improved_all_seeds": true,
+    "predictions_frozen_before_truth": true,
+    "seed_stability_rmse_below_0_01": true
+  },
+  "groups": 3268,
+  "inference_health": {
+    "mcmc_comparison": "P08 exact latent small-condition GPU NUTS qualification",
+    "method": "mean-field variational inference",
+    "runs": [
+      {
+        "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+        "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+        "final_loss": 6197.485112667084,
+        "finite_loss": true,
+        "initial_loss": 54966.9760951777,
+        "posterior_draws": 160,
+        "runtime_seconds": 37.82034590002149,
+        "seed": 20260906,
+        "svi_steps": 300
+      },
+      {
+        "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+        "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+        "final_loss": 6203.220939159393,
+        "finite_loss": true,
+        "initial_loss": 68457.40306948684,
+        "posterior_draws": 160,
+        "runtime_seconds": 31.985276899999008,
+        "seed": 20260907,
+        "svi_steps": 300
+      },
+      {
+        "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+        "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+        "final_loss": 6222.352897524834,
+        "finite_loss": true,
+        "initial_loss": 67059.8922012737,
+        "posterior_draws": 160,
+        "runtime_seconds": 31.77779590000864,
+        "seed": 20260908,
+        "svi_steps": 300
+      }
+    ],
+    "seed_pairwise_prediction_rmse": [
+      0.0031858556903898716,
+      0.001893130480311811,
+      0.002060879487544298
+    ]
+  },
+  "metrics": {
+    "B3": {
+      "bias": 0.0019831750240175633,
+      "interval_coverage": 0.004283965728274173,
+      "macro_rmse": 0.004040347542062458,
+      "mae": 0.0034977386410941363,
+      "weighted_rmse": 0.0036669608169582098
+    },
+    "PRISM": {
+      "bias": 0.0017650861024966385,
+      "interval_coverage": 0.9978580171358629,
+      "macro_rmse": 0.004061911647055168,
+      "mae": 0.0034241733846012527,
+      "weighted_rmse": 0.003276242570024872
+    },
+    "decision_regret": {
+      "top_10_percent": {
+        "B3": 31.631639946179575,
+        "PRISM": 35.12402457264761
+      },
+      "top_25_percent": {
+        "B3": 24.733942527203908,
+        "PRISM": 37.517253808965506
+      }
+    },
+    "small_campaign_bottom_quintile": {
+      "B3": {
+        "bias": 0.002342799485176859,
+        "macro_rmse": 0.00404680333150881,
+        "mae": 0.0035337759572488907,
+        "weighted_rmse": 0.003968478651788718
+      },
+      "PRISM": {
+        "bias": 0.0030120710680239435,
+        "macro_rmse": 0.004118285354305049,
+        "mae": 0.003603128126052203,
+        "weighted_rmse": 0.003947372550974203
+      },
+      "size_cut_units": 114.0
+    }
+  },
+  "phase": "P11",
+  "predictions": {
+    "bytes": 124401,
+    "path": "artifacts/qualification/P11/qualification_predictions_pretruth.parquet",
+    "sha256": "eebdc2e7b37105db2ff7d8cf894b9be217c981e15d7f99134cb91e72f80c59ef",
+    "status": "frozen_before_truth_scoring"
+  },
+  "privacy": {
+    "accounting": {
+      "accountant": "google-dp-accounting PLD",
+      "accountant_version": "0.6.0",
+      "compositions": 1,
+      "delta": 1e-07,
+      "epsilon": 0.9999999999998815,
+      "l2_sensitivity": 2.449489742783178,
+      "neighboring_relation": "user-level add/remove-one",
+      "pessimistic_estimate": true,
+      "standard_deviation": 11.460337177639705
+    },
+    "delta": 1e-07,
+    "epsilon": 1.0,
+    "l2_sensitivity": 2.449489742783178,
+    "neighboring_relation": "user-level add/remove-one",
+    "sigma": 11.460337177639705
+  },
+  "role": "qualification",
+  "status": "PASS",
+  "units": 442818
+}

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 1,
+  "dataset_id": "T2",
+  "phase": "P04",
+  "path": "data/validated/t2_attribution_roles.parquet",
+  "bytes": 545558964,
+  "sha256": "77378feff7cd6b20d83eb9a2d44850779399f877b07185485550fbf96b63cd09",
+  "rows": 16468027,
+  "source_sha256": "7af4d9de1783cd645f0a2f9f0f1d8acf76bd4791afb7ec468598b57ceb042d98",
+  "role_definition": "configs/role_definitions.yaml",
+  "assignment_mismatches": 0,
+  "path_role_leakage_groups": 0,
+  "user_role_leakage_groups": 0,
+  "role_counts": {
+    "train": 5374671,
+    "validation": 2392074,
+    "calibration": 1829327,
+    "policy": 2172823,
+    "qualification": 1296073,
+    "locked_final": 3403059
+  },
+  "user_counts": {
+    "train": 3071129,
+    "validation": 921338,
+    "calibration": 614226,
+    "policy": 614224,
+    "qualification": 307113,
+    "locked_final": 614226
+  }
+}

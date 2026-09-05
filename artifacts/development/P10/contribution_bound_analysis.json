@@ -1,0 +1,35 @@
+{
+  "phase": "P10",
+  "created_at": "2026-09-04T20:41:17.468Z",
+  "status": "DEVELOPMENT_SELECTION",
+  "source_role": "T2 train only",
+  "users": 3071129,
+  "pre_bound_quantiles": {
+    "probabilities": [0.95, 0.99, 0.999],
+    "campaigns_per_user": [2, 3, 4],
+    "impressions_per_user": [4, 8, 17],
+    "clicks_per_user": [2, 4, 11],
+    "conversions_per_user": [0, 1, 2],
+    "impressions_per_user_campaign": [4, 7, 14]
+  },
+  "selected_candidate_limits": {
+    "max_campaigns_per_user": 3,
+    "max_impressions_per_user_per_campaign": 7,
+    "max_impressions_per_user_per_window": 8,
+    "max_clicks_per_user": 4,
+    "max_conversions_per_user": 1
+  },
+  "users_affected": 51362,
+  "fraction_users_affected": 0.01672413941063107,
+  "component_user_counts": {
+    "campaign_limit": 6940,
+    "total_impression_limit": 29169,
+    "click_limit": 27515,
+    "conversion_limit": 6881
+  },
+  "user_campaign_cells": 3489534,
+  "user_campaign_cells_above_impression_limit": 29062,
+  "fraction_user_campaign_cells_above_limit": 0.00832833355496866,
+  "sensitivity_for_count_and_binary_success_vector": 2.449489742783178,
+  "rationale": "Development-only empirical 99th-percentile policy balances release feasibility with 98.33% user retention; it is not selected from PRISM outcomes."
+}

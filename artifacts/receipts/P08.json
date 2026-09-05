@@ -1,0 +1,32 @@
+{
+  "phase": "P08",
+  "status": "PASS",
+  "completed_at": "2026-09-04T20:30:39.195Z",
+  "model_id": "PRISM-HB-pyro-exact-latent-v1",
+  "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+  "outputs": [
+    "artifacts/runtime/gpu_qualification.json",
+    "artifacts/qualification/P08/mcmc_samples.pt",
+    "artifacts/qualification/P08/inference_diagnostics.json"
+  ],
+  "gates": {
+    "synchronized_gpu_operation": "PASS",
+    "noncentered_campaign_hierarchy": "PASS",
+    "noncentered_segment_hierarchy": "PASS",
+    "treatment_effect_heterogeneity": "PASS",
+    "exact_latent_binomial_gaussian_privacy_likelihood": "PASS",
+    "candidate_sees_no_hidden_count": "PASS",
+    "chains": 2,
+    "warmup_per_chain": 80,
+    "draws_per_chain": 80,
+    "max_r_hat": 1.0420918417065754,
+    "min_effective_sample_size": 46.417214278020126,
+    "divergences": 0,
+    "smoke_recovery_interval_contains_truth": true,
+    "tests": "25 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "runtime_seconds": 353.81437510001706,
+  "next_phase": "P09"
+}

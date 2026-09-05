@@ -1,0 +1,40 @@
+{
+  "backend": "Pyro 1.9.1 / PyTorch 2.14.0+cu130",
+  "candidate_inputs": [
+    "n0",
+    "n1",
+    "noisy_y0",
+    "noisy_y1",
+    "privacy_sigma"
+  ],
+  "chains": 2,
+  "cuda": "13.0",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "diagnostics": {
+    "divergences": 0,
+    "max_r_hat": 1.0420918417065754,
+    "min_effective_sample_size": 46.417214278020126
+  },
+  "draws_per_chain": 80,
+  "likelihood": "exact Binomial latent count marginalized under Gaussian privacy noise",
+  "model_id": "PRISM-HB-pyro-exact-latent-v1",
+  "peak_vram_bytes": 8894976,
+  "phase": "P08",
+  "posterior_mu_tau": 0.3899133084076249,
+  "posterior_mu_tau_95_interval": [
+    -0.36038737623813644,
+    1.0698942356162806
+  ],
+  "runtime_seconds": 353.81437510001706,
+  "samples": {
+    "bytes": 24581,
+    "path": "artifacts/qualification/P08/mcmc_samples.pt",
+    "sha256": "bdb6a54910131c9e25071e3a587731b0b067ec5ede02e502706a7e7b5293ac92"
+  },
+  "status": "PASS",
+  "smoke_recovery_interval_contains_truth": true,
+  "target_accept_probability": 0.85,
+  "true_tau_mean_smoke_only": 0.225,
+  "validated_at": "2026-09-04T20:29:26.977568Z",
+  "warmup": 80
+}

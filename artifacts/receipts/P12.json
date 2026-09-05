@@ -1,0 +1,25 @@
+{
+  "phase": "P12",
+  "status": "PASS",
+  "completed_at": "2026-09-04T21:26:08.435Z",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf",
+  "outputs": [
+    "configs/frozen_protocol.yaml",
+    "artifacts/qualification/P12/freeze_manifest.json"
+  ],
+  "gates": {
+    "checkpoint_B_reported": "PASS",
+    "protocol_complete": "PASS",
+    "data_identities_bound": "PASS",
+    "candidate_and_baseline_bound": "PASS",
+    "privacy_and_accountant_bound": "PASS",
+    "endpoint_guardrails_multiplicity_bound": "PASS",
+    "replication_and_uncertainty_bound": "PASS",
+    "promotion_rules_bound": "PASS",
+    "freeze_manifest_hashes": "20 of 20 PASS",
+    "tests": "31 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "next_phase": "P13"
+}

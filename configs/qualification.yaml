@@ -1,0 +1,22 @@
+spec_version: "2.2"
+tier: 2
+roles_allowed:
+  - qualification
+seed: 20260906
+stability_seeds:
+  - 20260906
+  - 20260907
+  - 20260908
+primary_epsilon: 1.0
+delta: 0.0000001
+neighboring_relation: user-level add/remove-one
+contribution_limits:
+  max_campaigns_per_user: 3
+  max_impressions_per_user_per_campaign: 7
+  max_impressions_per_user_per_window: 8
+  max_clicks_per_user: 4
+  max_conversions_per_user: 1
+primary_effect_regime: R2
+primary_endpoint: population_weighted_campaign_segment_treatment_effect_rmse
+candidate: PRISM-HB-pyro-rate-v2-effect-scale-0.05
+baseline: B3-empirical-bayes-private-aggregate-v1

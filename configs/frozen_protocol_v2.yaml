@@ -1,0 +1,18 @@
+spec_version: "2.2"
+status: FROZEN
+freeze_id: prism-ads-v2.2-20260904-8d98593fabdf-r2
+frozen_at: "2026-09-04T21:30:00.000Z"
+supersedes: prism-ads-v2.2-20260904-8d98593fabdf
+scientific_protocol:
+  path: configs/frozen_protocol.yaml
+  sha256: 6bdcc05577e42aa26dd19d644ff0005b267e326be13d660e47844f8f00e38329
+  change: none
+engineering_amendment:
+  reason: bind the dedicated locked execution orchestrator before locked start
+  locked_runner_path: src/prism_ads/experiments/p13_locked_primary.py
+  locked_runner_sha256: 7ccfcdc55bceea2993231eb5f37ee267b458d9900de87743ba58760aafe0afb4
+  scientific_choices_changed: false
+locked_start:
+  allowed_only_after_manifest_verification: true
+  role: locked_final
+  truth_access_rule: candidate predictions must be immutable before scoring opens sealed truth

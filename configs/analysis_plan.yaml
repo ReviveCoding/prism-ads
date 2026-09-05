@@ -1,0 +1,33 @@
+spec_version: "2.2"
+primary_endpoint: population_weighted_campaign_segment_treatment_effect_rmse
+materiality_relative_improvement: 0.05
+guardrails:
+  - macro_rmse
+  - interval_coverage
+  - decision_regret
+  - long_tail_rmse
+guardrail_thresholds:
+  macro_rmse_relative_deterioration_max: 0.10
+  interval_coverage_min: 0.80
+  small_campaign_rmse_relative_deterioration_max: 0.10
+  normalized_decision_regret_max: 0.02
+multiplicity:
+  primary: none
+  guardrails: Holm
+  exploratory: Benjamini-Hochberg FDR
+locked_primary:
+  role: locked_final
+  effect_regime: R2
+  privacy_replicates: 10
+  inference_seeds_per_replicate: 3
+  svi_steps: 1000
+  posterior_draws: 500
+  campaign_cluster_bootstrap_replicates: 1000
+  uncertainty: nested campaign-cluster bootstrap outside privacy-mechanism replicates
+promotion_gates:
+  relative_weighted_rmse_improvement_min: 0.05
+  paired_difference_interval_lower_bound_min: 0.0
+  mandatory_falsification: all_pass
+  inference_health: pass
+  evidence_integrity: pass
+  guardrails: all_pass

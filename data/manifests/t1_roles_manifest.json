@@ -1,0 +1,20 @@
+{
+  "manifest_version": 1,
+  "dataset_id": "T1",
+  "phase": "P04",
+  "path": "data/validated/t1_uplift_roles.parquet",
+  "bytes": 204336245,
+  "sha256": "14190421e3f8103815ba4e4c4b58d6d194dcde3137cd3ce8e2b273a777499c9c",
+  "rows": 13979592,
+  "source_sha256": "102587eec939fea7247e785fee6f5b9dd0ab3957ec0c6f42322c109db7a8f25c",
+  "role_definition": "configs/role_definitions.yaml",
+  "assignment_mismatches": 0,
+  "role_counts": {
+    "train": 6989149,
+    "validation": 2096654,
+    "calibration": 1398022,
+    "policy": 1398700,
+    "qualification": 699934,
+    "locked_final": 1397133
+  }
+}

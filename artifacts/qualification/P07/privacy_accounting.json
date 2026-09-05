@@ -1,0 +1,14 @@
+{
+  "accountant": "google-dp-accounting PLD",
+  "accountant_version": "0.6.0",
+  "calibration": "exact analytic Gaussian; independently checked by pessimistic PLD",
+  "compositions": 1,
+  "declared_epsilon": 1.0,
+  "delta": 1e-06,
+  "epsilon": 0.999999999999402,
+  "l2_sensitivity": 2.8284271247461903,
+  "neighboring_relation": "user-level add/remove-one",
+  "pessimistic_estimate": true,
+  "standard_deviation": 11.949196363914613,
+  "verification": "PASS"
+}

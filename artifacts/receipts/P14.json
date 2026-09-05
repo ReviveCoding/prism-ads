@@ -1,0 +1,24 @@
+{
+  "phase": "P14",
+  "status": "PASS",
+  "completed_at": "2026-09-04T23:12:00.000Z",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "outputs": [
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/secondary/epsilon_regime_predictions_pretruth.parquet",
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/secondary/secondary_results.json"
+  ],
+  "gates": {
+    "T1_randomized_analysis": "PASS",
+    "T2_private_attribution": "PASS_WITH_LOW_STABILITY",
+    "epsilon_sweep_6": "PASS",
+    "effect_regimes_8": "PASS",
+    "forty_eight_finite_gpu_fits": "PASS",
+    "predictions_frozen_before_truth": "PASS",
+    "threshold_study": "PASS",
+    "long_tail_R5": "PASS",
+    "falsification_reference": "P10 PASS",
+    "ablation_reference": "P10 PASS",
+    "primary_verdict_immutable": "PASS"
+  },
+  "next_phase": "P15"
+}

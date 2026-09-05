@@ -1,0 +1,36 @@
+{
+  "phase": "P04",
+  "status": "PASS",
+  "completed_at": "2026-09-04T19:47:08.954Z",
+  "inputs": {
+    "T1_parquet_sha256": "102587eec939fea7247e785fee6f5b9dd0ab3957ec0c6f42322c109db7a8f25c",
+    "T2_parquet_sha256": "7af4d9de1783cd645f0a2f9f0f1d8acf76bd4791afb7ec468598b57ceb042d98"
+  },
+  "outputs": [
+    "data/validated/t1_uplift_roles.parquet",
+    "data/validated/t2_attribution_roles.parquet",
+    "data/manifests/t1_roles_manifest.json",
+    "data/manifests/t2_roles_manifest.json",
+    "artifacts/qualification/P04/data_quality.json",
+    "artifacts/qualification/P04/protected_roles.json",
+    "configs/role_definitions.yaml"
+  ],
+  "preserved_negative_evidence": [
+    "artifacts/qualification/P04/data_quality_initial_failed.json",
+    "artifacts/qualification/P04/protected_roles_initial_failed.json"
+  ],
+  "gates": {
+    "T1_data_quality": "PASS",
+    "T1_randomization_validity": "PASS",
+    "T1_assignment_recomputation": "PASS",
+    "T2_data_quality": "PASS",
+    "T2_conversion_path_consistency": "PASS",
+    "T2_path_role_leakage": "PASS",
+    "T2_user_role_leakage": "PASS",
+    "row_count_lineage": "PASS",
+    "tests": "11 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "next_phase": "P05"
+}

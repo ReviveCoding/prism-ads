@@ -1,0 +1,60 @@
+{
+  "T1": {
+    "bytes": 204336245,
+    "distinct_row_ids": 13979592,
+    "expected_rows": 13979592,
+    "gate": "PASS",
+    "path": "data/validated/t1_uplift_roles.parquet",
+    "path_role_leakage_groups": 0,
+    "role_counts": {
+      "calibration": 1398022,
+      "locked_final": 1397133,
+      "policy": 1398700,
+      "qualification": 699934,
+      "train": 6989149,
+      "validation": 2096654
+    },
+    "rows": 13979592,
+    "salt": "prism-ads-v2.2-t1-role-salt-20260904",
+    "sha256": "14190421e3f8103815ba4e4c4b58d6d194dcde3137cd3ce8e2b273a777499c9c",
+    "strategy": "stable MD5 lower-64-bit bucket over salt and immutable row_id",
+    "thresholds_per_10000": {
+      "calibration": 7500,
+      "locked_final": 10000,
+      "policy": 8500,
+      "qualification": 9000,
+      "train": 5000,
+      "validation": 6500
+    }
+  },
+  "T2": {
+    "bytes": 518457839,
+    "cutpoints": [
+      1317785,
+      1719520,
+      1979726,
+      2283876,
+      2401242
+    ],
+    "distinct_row_ids": 16468027,
+    "embargo": "not required for path leakage; adjacent-time dependence retained as limitation",
+    "expected_rows": 16468027,
+    "gate": "PASS",
+    "path": "data/validated/t2_attribution_roles.parquet",
+    "path_role_leakage_groups": 0,
+    "role_counts": {
+      "calibration": 1646189,
+      "locked_final": 1721891,
+      "policy": 1636183,
+      "qualification": 826109,
+      "train": 8169629,
+      "validation": 2468026
+    },
+    "rows": 16468027,
+    "sha256": "c58028e7dacf321c2fbb36dcf7db1796f1dac23db35dc806437aaa32bc982e91",
+    "strategy": "time-aware path-end quantiles; conversion paths grouped by uid+conversion_id; non-conversion events grouped by uid-day"
+  },
+  "created_at": "2026-09-04T19:42:46.205422Z",
+  "overall_gate": "PASS",
+  "phase": "P04"
+}

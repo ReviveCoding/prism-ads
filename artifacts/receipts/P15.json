@@ -1,0 +1,20 @@
+{
+  "phase": "P15",
+  "status": "PASS",
+  "completed_at": "2026-09-04T23:24:30.000Z",
+  "freeze_id": "prism-ads-v2.2-20260904-8d98593fabdf-r2",
+  "outputs": [
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/analysis_master.parquet",
+    "artifacts/locked/prism-ads-v2.2-20260904-8d98593fabdf-r2/analysis_master_validation.json"
+  ],
+  "gates": {
+    "registered_locked_sources_only": "PASS",
+    "expected_rows": 399040,
+    "observed_rows": 399040,
+    "missing_truth": 0,
+    "tests": "31 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "next_phase": "P16"
+}

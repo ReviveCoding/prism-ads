@@ -1,0 +1,142 @@
+{
+  "T1": {
+    "controls": 2096937,
+    "conversion_rate": 0.002916680257907384,
+    "conversions": 40774,
+    "documented_treatment_ratio": 0.85,
+    "duplicate_rows_excluding_row_id": 1259545,
+    "exposure_rate": 0.03063122299992732,
+    "exposures": 428212,
+    "feature_smd": {
+      "f0": -0.006865619166377613,
+      "f1": 0.023994396746614494,
+      "f10": 0.010563462848643367,
+      "f11": -0.005159528366842661,
+      "f2": -0.006240989533665039,
+      "f3": -0.04883634016788493,
+      "f4": 0.007965661302977076,
+      "f5": -0.030556831004373536,
+      "f6": -0.04044806881131482,
+      "f7": 0.021269530121094313,
+      "f8": -0.022433335540453018,
+      "f9": 0.024001057667211445
+    },
+    "gate": "FAIL",
+    "invalid_binary": {
+      "conversion": 0,
+      "exposure": 0,
+      "treatment": 0,
+      "visit": 0
+    },
+    "max_abs_feature_smd": 0.04883634016788493,
+    "missing": {
+      "conversion": 0,
+      "exposure": 0,
+      "f0": 0,
+      "f1": 0,
+      "f10": 0,
+      "f11": 0,
+      "f2": 0,
+      "f3": 0,
+      "f4": 0,
+      "f5": 0,
+      "f6": 0,
+      "f7": 0,
+      "f8": 0,
+      "f9": 0,
+      "treatment": 0,
+      "visit": 0
+    },
+    "nonfinite": {
+      "f0": 0,
+      "f1": 0,
+      "f10": 0,
+      "f11": 0,
+      "f2": 0,
+      "f3": 0,
+      "f4": 0,
+      "f5": 0,
+      "f6": 0,
+      "f7": 0,
+      "f8": 0,
+      "f9": 0
+    },
+    "outcomes_by_treatment": [
+      [
+        0,
+        2096937,
+        0.0019375880152813366,
+        0.03820095691954503,
+        0.0
+      ],
+      [
+        1,
+        11882655,
+        0.0030894610674129645,
+        0.048543360048743316,
+        0.036036727482199896
+      ]
+    ],
+    "rows": 13979592,
+    "srm_chi_square": 1.8177758481483255e-06,
+    "srm_material_inconsistency": false,
+    "srm_p_value": 0.9989242531220275,
+    "srm_practical_deviation": 1.2875912258625277e-07,
+    "treated": 11882655,
+    "treatment_ratio": 0.8500001287591226,
+    "visit_rate": 0.046992000911042324,
+    "visits": 656929
+  },
+  "T2": {
+    "attributed_conversion_impressions": 442424,
+    "campaigns": 675,
+    "clicks": 5947563,
+    "conversion_id_cross_user_violations": 2910,
+    "conversion_impressions": 806196,
+    "conversion_time_violations": 0,
+    "duplicate_rows_excluding_row_id": 0,
+    "gate": "FAIL",
+    "invalid_binary": {
+      "attribution": 0,
+      "click": 0,
+      "conversion": 0
+    },
+    "missing": {
+      "attribution": 0,
+      "campaign": 0,
+      "cat1": 0,
+      "cat2": 0,
+      "cat3": 0,
+      "cat4": 0,
+      "cat5": 0,
+      "cat6": 0,
+      "cat7": 0,
+      "cat8": 0,
+      "cat9": 0,
+      "click": 0,
+      "click_nb": 0,
+      "click_pos": 0,
+      "conversion": 0,
+      "conversion_id": 0,
+      "conversion_timestamp": 0,
+      "cost": 0,
+      "cpo": 0,
+      "time_since_last_click": 0,
+      "timestamp": 0,
+      "uid": 0
+    },
+    "nonfinite": {
+      "cost": 0,
+      "cpo": 0
+    },
+    "row_order_chronology_violations": 0,
+    "rows": 16468027,
+    "timestamp_max": 2671199,
+    "timestamp_min": 0,
+    "unique_conversions": 435810,
+    "users": 6142256
+  },
+  "created_at": "2026-09-04T19:42:46.204416Z",
+  "overall_gate": "FAIL",
+  "phase": "P04"
+}

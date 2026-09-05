@@ -1,0 +1,9 @@
+{
+  "epsilon": 0.5,
+  "final_loss": 7572.776794373989,
+  "finite_loss": true,
+  "initial_loss": 93793.0772358384,
+  "regime": "R2",
+  "runtime_seconds": 56.71516590000829,
+  "seed": 2026091821
+}

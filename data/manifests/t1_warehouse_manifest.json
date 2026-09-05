@@ -1,0 +1,99 @@
+{
+  "bytes": 200066420,
+  "compression": "zstd",
+  "created_at": "2026-09-04T19:36:35.528989Z",
+  "dataset_id": "T1",
+  "format": "parquet",
+  "manifest_version": 1,
+  "path": "data/staged/t1_uplift.parquet",
+  "rows": 13979592,
+  "schema": [
+    {
+      "name": "row_id",
+      "nullable": "YES",
+      "type": "BIGINT"
+    },
+    {
+      "name": "f0",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f1",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f2",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f3",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f4",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f5",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f6",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f7",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f8",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f9",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f10",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "f11",
+      "nullable": "YES",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "treatment",
+      "nullable": "YES",
+      "type": "TINYINT"
+    },
+    {
+      "name": "conversion",
+      "nullable": "YES",
+      "type": "TINYINT"
+    },
+    {
+      "name": "visit",
+      "nullable": "YES",
+      "type": "TINYINT"
+    },
+    {
+      "name": "exposure",
+      "nullable": "YES",
+      "type": "TINYINT"
+    }
+  ],
+  "sha256": "102587eec939fea7247e785fee6f5b9dd0ab3957ec0c6f42322c109db7a8f25c",
+  "source_sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc"
+}

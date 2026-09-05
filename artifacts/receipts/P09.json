@@ -1,0 +1,29 @@
+{
+  "phase": "P09",
+  "status": "PASS",
+  "completed_at": "2026-09-04T20:38:05.658Z",
+  "outputs": [
+    "data/marts/t2_paths.parquet",
+    "artifacts/development/P09/attribution_credit.parquet",
+    "artifacts/development/P09/validation.json"
+  ],
+  "gates": {
+    "path_rows": 13236110,
+    "conversion_paths": 438730,
+    "path_chronology": "PASS",
+    "path_role_leakage": "PASS",
+    "A0_last_click": "PASS",
+    "A1_first_click": "PASS",
+    "A2_linear": "PASS",
+    "A3_time_decay": "PASS",
+    "A4_position_based": "PASS",
+    "A5_markov_removal": "PASS",
+    "T3_true_decision_regret": "PASS",
+    "public_reference_deviation": "PASS",
+    "tests": "29 passed",
+    "ruff": "PASS",
+    "mypy": "PASS"
+  },
+  "claim_boundary": "T2 attribution credit is not causal incrementality; T2 decisions use reference deviation, not true regret.",
+  "next_phase": "P10"
+}

@@ -1,0 +1,106 @@
+{
+  "T1": {
+    "assignment_mismatches": 0,
+    "bytes": 204336245,
+    "distinct_row_ids": 13979592,
+    "expected_rows": 13979592,
+    "gate": "PASS",
+    "path": "data/validated/t1_uplift_roles.parquet",
+    "path_role_leakage_groups": 0,
+    "role_counts": {
+      "calibration": 1398022,
+      "locked_final": 1397133,
+      "policy": 1398700,
+      "qualification": 699934,
+      "train": 6989149,
+      "validation": 2096654
+    },
+    "rows": 13979592,
+    "salt": "prism-ads-v2.2-t1-role-salt-20260904",
+    "sha256": "14190421e3f8103815ba4e4c4b58d6d194dcde3137cd3ce8e2b273a777499c9c",
+    "strategy": "stable MD5 lower-64-bit bucket over salt and immutable row_id",
+    "thresholds_per_10000": {
+      "calibration": 7500,
+      "locked_final": 10000,
+      "policy": 8500,
+      "qualification": 9000,
+      "train": 5000,
+      "validation": 6500
+    },
+    "time_ranges": {},
+    "user_counts": {},
+    "user_role_leakage_groups": 0
+  },
+  "T2": {
+    "assignment_mismatches": 0,
+    "bytes": 545558964,
+    "cutpoints": [
+      1690238,
+      2052600,
+      2286655,
+      2466052,
+      2556136
+    ],
+    "distinct_row_ids": 16468027,
+    "embargo": "not used because roles are user-disjoint; role time ranges overlap because each user's complete history follows that user's end-time assignment",
+    "expected_rows": 16468027,
+    "gate": "PASS",
+    "path": "data/validated/t2_attribution_roles.parquet",
+    "path_role_leakage_groups": 0,
+    "role_counts": {
+      "calibration": 1829327,
+      "locked_final": 3403059,
+      "policy": 2172823,
+      "qualification": 1296073,
+      "train": 5374671,
+      "validation": 2392074
+    },
+    "rows": 16468027,
+    "sha256": "77378feff7cd6b20d83eb9a2d44850779399f877b07185485550fbf96b63cd09",
+    "strategy": "time-aware user-end quantiles; every user's events stay in one role, which also keeps (uid, conversion_id) paths intact",
+    "time_ranges": {
+      "calibration": {
+        "event_max": 2286655,
+        "event_min": 4,
+        "user_end_max": 2286655
+      },
+      "locked_final": {
+        "event_max": 2671199,
+        "event_min": 2,
+        "user_end_max": 5262888
+      },
+      "policy": {
+        "event_max": 2466052,
+        "event_min": 3,
+        "user_end_max": 2466052
+      },
+      "qualification": {
+        "event_max": 2556136,
+        "event_min": 22,
+        "user_end_max": 2556136
+      },
+      "train": {
+        "event_max": 1690238,
+        "event_min": 0,
+        "user_end_max": 1690238
+      },
+      "validation": {
+        "event_max": 2052600,
+        "event_min": 14,
+        "user_end_max": 2052600
+      }
+    },
+    "user_counts": {
+      "calibration": 614226,
+      "locked_final": 614226,
+      "policy": 614224,
+      "qualification": 307113,
+      "train": 3071129,
+      "validation": 921338
+    },
+    "user_role_leakage_groups": 0
+  },
+  "created_at": "2026-09-04T19:45:49.394556Z",
+  "overall_gate": "PASS",
+  "phase": "P04"
+}
