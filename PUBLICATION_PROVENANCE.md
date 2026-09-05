@@ -18,6 +18,17 @@ does not redistribute row-level Criteo data, Parquet/DuckDB data, credentials, o
 
 ## Publication receipt
 
-The public repository URL, public commit, publication time, Pages status, remote CI outcome, and
-security-feature status are recorded here after the remote repository exists and those services
-have reported their final state.
+- Public repository: <https://github.com/ReviveCoding/prism-ads>
+- Sanitized public root commit: `b487f9574f5242c7ca9641375faf3f29899ee9f3`
+- Published: `2026-09-05T17:31:44Z`
+- Scientific freeze: `prism-ads-v2.2-20260904-8d98593fabdf-r2`
+- Locked run: `locked-r2-20260904-001`
+- GitHub Pages dashboard: <https://revivecoding.github.io/prism-ads/dashboard/>
+- Initial root CodeQL: PASS. Initial CPU CI exposed two local-only integrity checks that require
+  intentionally unpublished data/state; the public workflow excludes only those checks while
+  retaining the complete local gate.
+- Security: vulnerability alerts, Dependabot security updates, private vulnerability reporting,
+  secret scanning, and secret-scanning push protection enabled; initial alert queries returned zero.
+
+The full local Git history and scientific/post-release tags remain private/local. Only the
+sanitized `public-main` lineage is published.

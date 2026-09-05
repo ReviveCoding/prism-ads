@@ -45,7 +45,8 @@ turns privacy, causal, statistical, and governance evidence into a model-selecti
 
 - [Executive memo](reports/EXECUTIVE_MEMO.md) · [technical report](reports/TECHNICAL_REPORT.md) ·
   [measurement readout](reports/MEASUREMENT_READOUT.md)
-- [Dashboard](dashboard/index.html) · [15-figure index](reports/FIGURE_INDEX.md) ·
+- **[Live dashboard](https://revivecoding.github.io/prism-ads/dashboard/)** ·
+  [dashboard source](dashboard/index.html) · [15-figure index](reports/FIGURE_INDEX.md) ·
   [claim ledger](reports/CLAIM_LEDGER.md)
 - [Reproduction runbook](RUNBOOK.md) · [final scientific status](reports/FINAL_STATUS.md) ·
   [post-release hardening record](POST_RELEASE_HARDENING.md)

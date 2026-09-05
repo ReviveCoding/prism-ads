@@ -8,6 +8,7 @@ authors:
 version: "2.2"
 date-released: 2026-09-04
 license: Apache-2.0
+repository-code: "https://github.com/ReviveCoding/prism-ads"
 abstract: >-
   A governed research software benchmark for privacy-preserving advertising measurement,
   causal incrementality, attribution, hierarchical Bayes, and decision-quality evaluation.

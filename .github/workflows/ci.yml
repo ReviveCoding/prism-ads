@@ -13,7 +13,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install -e .[dev]
-      - run: python -m coverage run --branch -m pytest -q
+      # These two integrity checks require the private local data/state preserved outside the
+      # sanitized public snapshot. They remain mandatory in the local publication gate.
+      - run: >-
+          python -m coverage run --branch -m pytest -q
+          -k "not test_repository_controller_verifies and not test_repository_freeze_manifest"
       - run: python -m coverage report --fail-under=80
       - run: python -m ruff check src tests tools
       - run: python -m mypy src tools

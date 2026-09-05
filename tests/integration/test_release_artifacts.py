@@ -185,6 +185,7 @@ def test_publication_metadata_is_scoped_and_automated() -> None:
     codeql = (ROOT / ".github" / "workflows" / "codeql.yml").read_text(encoding="utf-8")
 
     assert 'version: "2.2"' in citation and "license: Apache-2.0" in citation
+    assert "https://github.com/ReviveCoding/prism-ads" in citation
     assert "2026-09-04" in citation and "doi" not in citation.lower()
     assert "private vulnerability reporting" in security
     assert "Do not disclose sensitive security details in a public issue" in security
