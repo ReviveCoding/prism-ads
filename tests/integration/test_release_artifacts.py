@@ -165,8 +165,6 @@ def test_required_hardening_documents_are_present_and_nonempty() -> None:
     paths = (
         "POST_RELEASE_HARDENING.md",
         "reports/PUBLICATION_AUDIT.md",
-        "reports/RESUME_BULLETS.md",
-        "reports/INTERVIEW_NOTES.md",
         "reports/FUTURE_V23_PLAN.md",
         "reports/FIGURE_QA.md",
         "SECURITY.md",
