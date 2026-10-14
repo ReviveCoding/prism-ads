@@ -50,8 +50,7 @@ turns privacy, causal, statistical, and governance evidence into a model-selecti
   [claim ledger](reports/CLAIM_LEDGER.md)
 - [Reproduction runbook](RUNBOOK.md) · [final scientific status](reports/FINAL_STATUS.md) ·
   [post-release hardening record](POST_RELEASE_HARDENING.md)
-- [Resume bullets](reports/RESUME_BULLETS.md) · [interview notes](reports/INTERVIEW_NOTES.md) ·
-  [clean v2.3 study plan](reports/FUTURE_V23_PLAN.md)
+- [Next study protocol](reports/FUTURE_V23_PLAN.md)
 - [Citation metadata](CITATION.cff) · [Apache-2.0 source license](LICENSE) ·
   [security and responsible disclosure](SECURITY.md)
 
